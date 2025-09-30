@@ -10,17 +10,8 @@
       ./hardware-configuration.nix
       ./lapix.nix
       ./services.nix
+      ./boot/bootloader.nix
     ];
-
-  # Bootloader.
-  # boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.grub = {
-    enable = true;
-    devices = [ "nodev" ];
-    efiSupport = true;
-    useOSProber = true;
-  };
 
   # Mount Windows (C:)
   fileSystems."/mnt/windows" = {
