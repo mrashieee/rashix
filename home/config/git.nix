@@ -11,20 +11,4 @@
     safe.directory = "/home/rashocean/confix";
    };
   };
-  
-  # Home utils
-  home.packages = with pkgs; [
-    # Development
-    vscode
-    neovim
-    gcc
-    nodejs
-    python3
-
-    # Utils
-    librewolf
-    obsidian
-    fastfetch
-    equibop
-    ];
 }

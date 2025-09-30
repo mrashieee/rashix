@@ -3,8 +3,9 @@
 {
   imports =
     [
-      ./config/utils.nix
+      ./config/git.nix
       ./config/shell.nix
+      ./apps/utils.nix
     ];
 
   home = {
