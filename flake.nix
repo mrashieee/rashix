@@ -20,7 +20,7 @@
 	    home-manager = {
 	      useGlobalPkgs = true;
 	      useUserPackages = true;
-	      users.rashocean = import ./home.nix;
+	      users.rashocean = import ./home/home.nix;
 	      backupFileExtension = "backup";
           };
         }
