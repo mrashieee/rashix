@@ -13,55 +13,17 @@
       ./boot/bootloader.nix
       ./mount/mount.nix
       ./garbage-collector/gc.nix
-      ./networking/host.nix
+      ./hosts/host.nix
+      ./hosts/users.nix
       ./intrzone/zone.nix
       ./desktop/greeter.nix
       ./desktop/desktopmanager.nix
       ./desktop/windowmanager.nix
+      ./keyboard/keymap
     ];
-
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
-  };
-
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-
-  # Enable sound with pipewire.
-  services.pulseaudio.enable = false;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
-
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
-  };
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
-
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.rashocean = {
-    isNormalUser = true;
-    description = "Muhammad Rashid K";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-    ];
-  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
-  # nvidia hardware ig(lapix)
-  # hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
