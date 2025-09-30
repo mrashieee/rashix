@@ -26,7 +26,6 @@
 
   # Disk management & automount
   services.udisks2.enable = true;
-  services.udiskie.enable = true;
 
   # Environment/system packages
   environment.systemPackages = with pkgs; [
