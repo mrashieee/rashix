@@ -3,8 +3,8 @@
 {
   imports =
     [
-      ./utils.nix
-      ./shell.nix
+      ./config/utils.nix
+      ./config/shell.nix
     ];
 
   home = {
