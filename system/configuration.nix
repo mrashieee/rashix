@@ -15,43 +15,11 @@
       ./garbage-collector/gc.nix
       ./networking/connection.nix
       ./networking/host.nix
+      ./intrzone/zone.nix
+      ./desktop/greeter.nix
+      ./desktop/desktopmanager.nix
+      ./desktop/windowmanager.nix
     ];
-
-  # Set your time zone.
-  time.timeZone = "Asia/Kolkata";
-
-  # Select internationalisation properties.
-  i18n.defaultLocale = "en_IN";
-
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "en_IN";
-    LC_IDENTIFICATION = "en_IN";
-    LC_MEASUREMENT = "en_IN";
-    LC_MONETARY = "en_IN";
-    LC_NAME = "en_IN";
-    LC_NUMERIC = "en_IN";
-    LC_PAPER = "en_IN";
-    LC_TELEPHONE = "en_IN";
-    LC_TIME = "en_IN";
-  };
-
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
-  # Enable the GNOME Desktop Environment.
-  # services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-  programs.hyprland.enable = true;
-  programs.niri.enable = true;
-  services.greetd = {
-    enable = true;
-    settings = {
-      default_session = {
-      command = "${pkgs.greetd.tuigreet}/bin/tuigreet --sessions ${config.services.displayManager.sessionData.desktops}/share/xsessions:${config.services.xserver.displayManager.sessionData.desktops}/share/wayland-sessions --remember --remember-user-session";
-      user = "greeter";
-      };
-    };
-  };
 
   # Configure keymap in X11
   services.xserver.xkb = {
