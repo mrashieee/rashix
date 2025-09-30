@@ -6,8 +6,6 @@
     xdg.portal.enable = true;
 
     environment.systemPackages = with pkgs; [
-    hyprland
-    niri
     wlroots
     wl-clipboard
     mako
