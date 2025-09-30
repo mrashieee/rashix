@@ -19,7 +19,7 @@
       ./desktop/greeter.nix
       ./desktop/desktopmanager.nix
       ./desktop/windowmanager.nix
-      ./keyboard/keymap
+      ./keyboard/keymap.nix
     ];
 
   # Allow unfree packages
