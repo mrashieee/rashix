@@ -10,10 +10,10 @@
       };
     };
 
-    outputs = { self, nixpkgs, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
       nixosConfigurations.rashix = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
-	modules = [
+	  modules = [
 	  ./system/configuration.nix
 	  inputs.home-manager.nixosModules.default
 	  {
