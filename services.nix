@@ -3,6 +3,7 @@
 {
     services.dbus.enable = true;
     security.polkit.enable = true;
+    xdg.portal.enable = true;
 
     environment.systemPackages = with pkgs; [
     hyprland
