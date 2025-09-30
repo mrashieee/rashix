@@ -25,7 +25,7 @@
   # Mount Windows (C:)
   fileSystems."/mnt/windows" = {
     device = "/dev/disk/by-uuid/6C52F70752F6D534";
-    fsType = "ntfs-3g";
+    fsType = "ntfs3";
     options = [ "rw" "uid=1000" "gid=100" "umask=022" ];
   };
 
@@ -130,7 +130,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     neovim
-    ntfs3g
   ];
 
   # Enable flakes
