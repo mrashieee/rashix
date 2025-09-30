@@ -8,12 +8,11 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./lapix.nix
+      ./driver/lapix.nix
       ./services.nix
       ./boot/bootloader.nix
       ./mount/mount.nix
       ./garbage-collector/gc.nix
-      ./networking/connection.nix
       ./networking/host.nix
       ./intrzone/zone.nix
       ./desktop/greeter.nix
