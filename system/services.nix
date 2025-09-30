@@ -7,6 +7,7 @@
 
   # System services
   services.dbus.enable = true;
+  services.gvfs.enable = true;
   security.polkit.enable = true;
   xdg.portal.enable = true;
   services.printing.enable = true;
