@@ -1,10 +1,12 @@
 { config, pkgs, ... }:
-
+let
+  wallpaper = ./assets/wallpapers/silksong.jpg;
+in
 {
   # Stylix theming
   stylix = {
     enable = true;
-    image = "/home/rashocean/confix/assets/wallpapers/silksong.jpg";
+    image = builtins.toString wallpaper;
     polarity = "dark";
     targets.gtk.enable = true;
     targets.qt.enable = true;
