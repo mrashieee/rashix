@@ -22,6 +22,7 @@
       lapix = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
         modules = [
+          stylix.nixosModules.stylix
           ./hosts/lapix/configuration.nix
           home-manager.nixosModules.default
           {
