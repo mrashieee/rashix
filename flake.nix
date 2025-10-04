@@ -13,7 +13,7 @@
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations = {
-      rashix = nixpkgs.lib.nixosSystem {
+      lapix = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
         ./hosts/lapix/configuration.nix
