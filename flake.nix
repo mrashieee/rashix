@@ -17,7 +17,7 @@
       };
     };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, stylix, home-manager, ... }@inputs: {
     nixosConfigurations = {
       lapix = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
