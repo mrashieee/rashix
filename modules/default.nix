@@ -12,5 +12,6 @@
       ./keymap.nix
       ./mount.nix
       ./services.nix
+      ./theming.nix
     ];
 }
