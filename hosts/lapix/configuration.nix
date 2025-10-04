@@ -5,8 +5,8 @@
     [   # Include the results of the hardware scan.
         ./hardware-configuration.nix
         ./driver.nix
-        
-        
+
+        ../modules.nix
     ];
 
     # Define a user account. Don't forget to set a password with ‘passwd’.
