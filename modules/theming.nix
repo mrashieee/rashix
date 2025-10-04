@@ -4,7 +4,7 @@
   # Stylix theming
   stylix = {
     enable = true;
-    image = builtins.toString ../assets/wallpapers/silksong.jpg;
+    image = builtins.toString ../assets/wallpapers/nix-black.jpg;
     polarity = "dark";
     targets.gtk.enable = true;
     targets.qt.enable = true;
