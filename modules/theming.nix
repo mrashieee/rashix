@@ -1,12 +1,10 @@
 { config, pkgs, ... }:
-let
-  wallpaper = ../assets/wallpapers/silksong.jpg;
-in
+
 {
   # Stylix theming
   stylix = {
     enable = true;
-    image = builtins.toString wallpaper;
+    image = builtins.toString ../assets/wallpapers/silksong.jpg;
     polarity = "dark";
     targets.gtk.enable = true;
     targets.qt.enable = true;
