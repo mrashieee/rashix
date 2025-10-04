@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 let
-  wallpaper = ./assets/wallpapers/silksong.jpg;
+  wallpaper = ../assets/wallpapers/silksong.jpg;
 in
 {
   # Stylix theming
