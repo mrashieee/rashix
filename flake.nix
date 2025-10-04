@@ -20,16 +20,16 @@
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations = {
       lapix = nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit inputs;};
-      modules = [
-        ./hosts/lapix/configuration.nix
-        home-manager.nixosModules.default
-	      {
-	        home-manager = {
-	          useGlobalPkgs = true;
-	          useUserPackages = true;
-	          users.rashocean = import ./home/home.nix;
-	          backupFileExtension = "backup";
+        specialArgs = {inherit inputs;};
+        modules = [
+          ./hosts/lapix/configuration.nix
+          home-manager.nixosModules.default
+          {
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              users.rashocean = import ./home/home.nix;
+              backupFileExtension = "backup";
             };
           }
         ];
