@@ -4,12 +4,6 @@
   inputs ={
     nixpkgs.url = "nixpkgs/nixos-25.05";
 
-    # Stylix input
-    stylix = {
-      url = "github:nix-community/stylix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     # Home manager input
     home-manager = {
       url = "github:nix-community/home-manager/release-25.05";
@@ -17,12 +11,11 @@
       };
     };
 
-  outputs = { self, nixpkgs, stylix, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations = {
       lapix = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
         modules = [
-          stylix.nixosModules.stylix
           ./hosts/lapix/configuration.nix
           home-manager.nixosModules.default
           {
