@@ -12,6 +12,23 @@
   xdg.portal.enable = true;
   services.printing.enable = true;
 
+  # Fonts
+  fonts = {
+  packages = with pkgs; [
+    noto-fonts
+    noto-fonts-emoji
+    noto-fonts-cjk-sans
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.fira-code
+    nerd-fonts.droid-sans-mono
+  ];
+  fontconfig = {
+    defaultFonts = {
+      emoji = [ "Noto Color Emoji" ]; # or use "OpenMoji Color"
+    };
+  };
+  };
+
   # Pipewire sound
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
