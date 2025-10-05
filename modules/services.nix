@@ -43,5 +43,9 @@
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
     udiskie        # GUI for automounting
+
+    # Temporary
+    rofi
+    waybar
   ];
 }
