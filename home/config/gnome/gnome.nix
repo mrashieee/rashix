@@ -1,11 +1,21 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
-  # Installs and activates only extensions that are available in pkgs.gnomeExtensions
-  home.packages = with pkgs.gnomeExtensions; [
-    user-themes
-    clipboard-indicator
-    sound-output-device-chooser
-    appindicator
+  home.packages = with pkgs; [
+    gnomeExtensions.user-themes
+    gnomeExtensions.clipboard-indicator
+    gnomeExtensions.sound-output-device-chooser
+    gnomeExtensions.appindicator
   ];
+
+  dconf.settings = {
+    "org/gnome/shell" = {
+      enabled-extensions = [
+        "user-theme@gnome-shell-extensions.gcampax.github.com"
+        "clipboard-indicator@tudmotu.com"
+        "sound-output-device-chooser@kgshank.net"
+        "appindicatorsupport@rgcjonas.gmail.com"
+      ];
+    };
+  };
 }
