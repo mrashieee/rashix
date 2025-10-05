@@ -31,6 +31,7 @@
   environment.systemPackages = with pkgs; [
     wlroots
     wl-clipboard
+    xwayland-satellite
     mako
     kitty
     nautilus
