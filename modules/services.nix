@@ -39,7 +39,6 @@
     slurp
     brightnessctl
     swaylock
-    waybar
     xdg-desktop-portal
     xdg-desktop-portal-gtk
     udiskie        # GUI for automounting
