@@ -6,6 +6,7 @@
       ./config/git.nix
       ./config/shell.nix
       ./config/hyprland/hyprland.nix
+      ./config/niri/niri.nix
       ./apps/utils.nix
     ];
 
