@@ -5,6 +5,7 @@
     [
       ./config/git.nix
       ./config/shell.nix
+      ./config/hyprland/hyprland.nix
       ./apps/utils.nix
     ];
 
