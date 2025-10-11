@@ -6,7 +6,7 @@
     enable = true;
     wifi = {
       powersave = false;
-    }
+    };
   };
   hardware.bluetooth.enable = true;
 
