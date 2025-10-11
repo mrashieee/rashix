@@ -6,27 +6,26 @@
   hardware.bluetooth.enable = true;
 
   # System services
-  services.dbus.enable = true;
-  services.gvfs.enable = true;
   security.polkit.enable = true;
   xdg.portal.enable = true;
   services.printing.enable = true;
 
   # Fonts
   fonts = {
-  packages = with pkgs; [
-    noto-fonts
-    noto-fonts-emoji
-    noto-fonts-cjk-sans
-    nerd-fonts.jetbrains-mono
-    nerd-fonts.fira-code
-    nerd-fonts.droid-sans-mono
-  ];
-  fontconfig = {
-    defaultFonts = {
-      emoji = [ "Noto Color Emoji" ]; # or use "OpenMoji Color"
+    packages = with pkgs; [
+      noto-fonts
+      noto-fonts-emoji
+      noto-fonts-cjk-sans
+      nerd-fonts.jetbrains-mono
+      nerd-fonts.fira-code
+      nerd-fonts.droid-sans-mono
+      font-awesome
+    ];
+    fontconfig = {
+      defaultFonts = {
+        emoji = [ "Noto Color Emoji" ]; # or use "OpenMoji Color"
+      };
     };
-  };
   };
 
   # Pipewire sound
@@ -41,9 +40,6 @@
     # media-session.enable = true;  # Optional
   };
 
-  # Disk management & automount
-  services.udisks2.enable = true;
-
   # Environment/system packages
   environment.systemPackages = with pkgs; [
     wlroots
@@ -51,17 +47,13 @@
     xwayland-satellite
     mako
     kitty
-    nautilus
-    polkit_gnome
     grim
     slurp
     brightnessctl
     swaylock
     xdg-desktop-portal
-    xdg-desktop-portal-gtk
-    xdg-desktop-portal-hyprland
-    udiskie        # GUI for automounting
-
+    kdePackages.xdg-desktop-portal-kde
+    xdg-desktop-portal-hyprland        # UI for automounting
     # Temporary
     rofi
     waybar

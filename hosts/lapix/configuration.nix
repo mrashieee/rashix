@@ -15,6 +15,7 @@
     description = "Muhammad Rashid K";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
+    kdePackages.kate
     ];
     };
 

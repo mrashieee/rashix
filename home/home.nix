@@ -5,7 +5,6 @@
     [
       ./config/git.nix
       ./config/shell.nix
-      ./config/gnome/gnome.nix
       ./apps/utils.nix
     ];
 

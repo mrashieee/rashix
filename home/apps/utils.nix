@@ -14,7 +14,7 @@
     librewolf
     obsidian
     fastfetch
-    equibop
+    vesktop
     stremio
     libreoffice-fresh
 
