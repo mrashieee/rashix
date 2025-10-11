@@ -14,6 +14,6 @@ in
   # Activation script to symlink the Niri config
   home.activation.symlink-niri = lib.hm.dag.entryAfter ["writeBoundary"] ''
     mkdir -p ${config.home.homeDirectory}/.config/niri
-    ln -sfn ${niriConfFile} ${config.home.homeDirectory}/.config/niri
+    ln -sfn ${niriConfFile}/ ${config.home.homeDirectory}/.config/niri
   '';
 }
