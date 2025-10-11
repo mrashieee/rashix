@@ -50,7 +50,8 @@
     grim
     slurp
     brightnessctl
-    swaylock
+    hyprlock
+    hypridle
     xdg-desktop-portal
     kdePackages.xdg-desktop-portal-kde
     xdg-desktop-portal-hyprland        # UI for automounting
