@@ -2,7 +2,12 @@
 
 {
   # Networking & Bluetooth
-  networking.networkmanager.enable = true;
+  networking.networkmanager = {
+    enable = true;
+    wifi = {
+      powersave = false;
+    }
+  };
   hardware.bluetooth.enable = true;
 
   # System services
