@@ -54,7 +54,6 @@
     networkmanagerapplet
     blueman
     kitty
-    nautilus
     wlroots
     wl-clipboard
     cliphist
@@ -75,12 +74,5 @@
     # System utils
     btop
     nvtopPackages.full
-
-    # Nautilus dependencies
-    gvfs
-    gphoto2
-    ffmpegthumbnailer
-    file-roller
-    xdg-utils
   ];
 }
