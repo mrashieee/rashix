@@ -14,6 +14,9 @@
   security.polkit.enable = true;
   xdg.portal.enable = true;
   services.printing.enable = true;
+  services.gvfs.enable = true;
+  services.dbus.enable = true;
+
 
   # Fonts
   fonts = {
@@ -47,10 +50,13 @@
 
   # Environment/system packages
   environment.systemPackages = with pkgs; [
+    networkmanagerapplet
+    blueman
     kitty
     nautilus
     wlroots
     wl-clipboard
+    cliphist
     xwayland-satellite
     mako
     grim
@@ -63,5 +69,12 @@
     xdg-desktop-portal-hyprland
     rofi
     waybar
+
+    # Nautilus dependencies
+    gvfs
+    gphoto2
+    ffmpegthumbnailer
+    file-roller
+    xdg-utils
   ];
 }
