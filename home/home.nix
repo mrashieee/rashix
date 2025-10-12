@@ -3,11 +3,12 @@
 {
   imports =
     [
+      ./apps/utils.nix
+      ./apps/file-manager.nix
       ./config/git.nix
       ./config/shell.nix
       ./config/hyprland/hyprland.nix
       ./config/niri/niri.nix
-      ./apps/utils.nix
     ];
 
   home = {
