@@ -47,20 +47,20 @@
 
   # Environment/system packages
   environment.systemPackages = with pkgs; [
+    kitty
+    nautilus
     wlroots
     wl-clipboard
     xwayland-satellite
     mako
-    kitty
     grim
     slurp
     brightnessctl
     hyprlock
     hypridle
     xdg-desktop-portal
-    kdePackages.xdg-desktop-portal-kde
-    xdg-desktop-portal-hyprland        # UI for automounting
-    # Temporary
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-hyprland
     rofi
     waybar
   ];
