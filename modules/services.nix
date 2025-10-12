@@ -10,14 +10,6 @@
   };
   hardware.bluetooth.enable = true;
 
-  # System services
-  security.polkit.enable = true;
-  xdg.portal.enable = true;
-  services.printing.enable = true;
-  services.gvfs.enable = true;
-  services.dbus.enable = true;
-
-
   # Fonts
   fonts = {
     packages = with pkgs; [
@@ -35,6 +27,15 @@
       };
     };
   };
+
+  # System services
+  security.polkit.enable = true;
+  xdg.portal.enable = true;
+  services.printing.enable = true;
+  services.gvfs.enable = true;
+  services.dbus.enable = true;
+
+
 
   # Pipewire sound
   services.pulseaudio.enable = false;
@@ -58,6 +59,7 @@
     wl-clipboard
     cliphist
     xwayland-satellite
+    libnotify
     mako
     grim
     slurp
