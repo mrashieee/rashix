@@ -71,6 +71,16 @@
     rofi
     waybar
 
+    # Thunar
+    xfce.thunar
+    xfce.xfconf
+    xfce.tumbler
+    xfce.thunar-archive-plugin
+    xfce.thunar-volman
+    xfce.thunar-media-tags-plugin
+    p7zip
+    xarchiver
+
     # System utils
     btop
     nvtopPackages.full
