@@ -70,6 +70,10 @@
     rofi
     waybar
 
+    # System utils
+    btop
+    nvtop
+
     # Nautilus dependencies
     gvfs
     gphoto2
