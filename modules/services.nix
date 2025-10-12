@@ -72,7 +72,7 @@
 
     # System utils
     btop
-    nvtop
+    nvtopPackages.full
 
     # Nautilus dependencies
     gvfs
