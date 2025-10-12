@@ -8,10 +8,10 @@
 {
   # bookmarks for the side pane
   gtk.gtk3.bookmarks = [
-    "file:///home/${user}/Downloads Downloads"
-    "file:///home/${user}/Pictures Pictures"
-    "file:///home/${user}/Documents Documents"
-    "file:///home/${user}/confix NixOS"
-    "file:///home/${user}/dev Development"
+    "${config.home.homeDirectory}/Downloads Downloads"
+    "${config.home.homeDirectory}/Pictures Pictures"
+    "${config.home.homeDirectory}/Documents Documents"
+    "${config.home.homeDirectory}/confix NixOS"
+    "${config.home.homeDirectory}/dev Development"
   ];
 }
