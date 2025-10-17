@@ -10,6 +10,17 @@
   };
   hardware.bluetooth.enable = true;
 
+  # File manager
+  programs = {
+    thunar = {
+      enable = true;
+      plugins = with pkgs.xfce; [
+        thunar-archive-plugins
+        thunar-volman
+      ];
+    };
+  };
+
   # Fonts
   fonts = {
     packages = with pkgs; [
@@ -70,9 +81,7 @@
     xdg-desktop-portal-hyprland
     rofi
     waybar
-
-    # Thunar
-    nautilus
+    ffmpegthumbnailer
 
     # System utils
     btop
