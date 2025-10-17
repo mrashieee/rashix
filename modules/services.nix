@@ -62,6 +62,7 @@
 
   # Environment/system packages
   environment.systemPackages = with pkgs; [
+    ntfs3g
     networkmanagerapplet
     blueman
     kitty
