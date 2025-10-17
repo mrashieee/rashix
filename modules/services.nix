@@ -13,17 +13,17 @@
   # Fonts
   fonts = {
     packages = with pkgs; [
-      noto-fonts
-      noto-fonts-emoji
-      noto-fonts-cjk-sans
-      nerd-fonts.jetbrains-mono
-      nerd-fonts.fira-code
-      nerd-fonts.droid-sans-mono
-      font-awesome
-    ];
-    fontconfig = {
-      defaultFonts = {
-        emoji = [ "Noto Color Emoji" ]; # or use "OpenMoji Color"
+    noto-fonts
+    noto-fonts-emoji
+    noto-fonts-cjk-sans
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.fira-code
+    nerd-fonts.droid-sans-mono
+    font-awesome
+  ];
+  fontconfig = {
+    defaultFonts = {
+      emoji = [ "Noto Color Emoji" ]; # or use "OpenMoji Color"
       };
     };
   };
@@ -72,14 +72,7 @@
     waybar
 
     # Thunar
-    xfce.thunar
-    xfce.xfconf
-    xfce.tumbler
-    xfce.thunar-archive-plugin
-    xfce.thunar-volman
-    xfce.thunar-media-tags-plugin
-    p7zip
-    xarchiver
+    nautilus
 
     # System utils
     btop
