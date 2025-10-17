@@ -10,7 +10,7 @@
       ./gc.nix
       ./zone.nix
       ./keymap.nix
-#       ./mount.nix
+      ./mount.nix
       ./services.nix
       ./theming.nix
     ];
