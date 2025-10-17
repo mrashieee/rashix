@@ -10,17 +10,6 @@
   };
   hardware.bluetooth.enable = true;
 
-  # File manager
-  programs = {
-    thunar = {
-      enable = true;
-      plugins = with pkgs.xfce; [
-        thunar-archive-plugin
-        thunar-volman
-      ];
-    };
-  };
-
   # Fonts
   fonts = {
     packages = with pkgs; [
@@ -45,8 +34,7 @@
   services.printing.enable = true;
   services.gvfs.enable = true;
   services.dbus.enable = true;
-
-
+  services.udisks2.enable = true;
 
   # Pipewire sound
   services.pulseaudio.enable = false;
@@ -63,6 +51,7 @@
   # Environment/system packages
   environment.systemPackages = with pkgs; [
     ntfs3g
+    nemo
     networkmanagerapplet
     blueman
     kitty
