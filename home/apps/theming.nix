@@ -30,7 +30,6 @@
     home.sessionVariables = {
         XCURSOR_THEME = "Bibata-Modern-Ice";
         XCURSOR_SIZE = "18";
-        WAYLAND_DISPLAY = "wayland-0";
         NIXOS_OZONE_WL = "1";
     };
 
