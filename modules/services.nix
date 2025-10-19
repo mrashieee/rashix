@@ -62,6 +62,7 @@
     libnotify
     mako
     grim
+    grimblast
     slurp
     brightnessctl
     hyprlock

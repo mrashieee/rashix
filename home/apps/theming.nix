@@ -17,6 +17,21 @@
         style.name = "adwaita-dark";
     };
 
+    home.pointerCursor = {
+        enable = true;
+        gtk.enable = true;
+        x11.enable = true;
+        hyprcursor.enable = true;
+        package = pkgs.bibata-cursors;
+        name = "Bibata-Modern-Ice";
+        size = 24;
+    };
+
+    home.sessionVariables = {
+        XCURSOR_THEME = "Bibata-Modern-Ice";
+        XCURSOR_SIZE = "24";
+    };
+
     dconf = {
         enable = true;
         settings = {
