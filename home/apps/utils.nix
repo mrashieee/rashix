@@ -11,7 +11,6 @@
     python3
 
     # Utils
-    obs-studio
     feh
     eog
     gthumb
