@@ -9,7 +9,7 @@ in
     text = "";
   };
 
-  home.activation.symlink-hypr = lib.hm.dag.entryAfter ["writeBoundary"] ''
+  home.activation.symlink-mango = lib.hm.dag.entryAfter ["writeBoundary"] ''
     mkdir -p ${config.home.homeDirectory}/.config
     ln -sfn ${mangoconfDir} ${config.home.homeDirectory}/.config/mango
   '';

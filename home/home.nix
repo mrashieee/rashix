@@ -9,6 +9,7 @@
       ./config/shell.nix
       ./config/hyprland/hyprland.nix
       ./config/niri/niri.nix
+      ./config/mango/mango.nix
     ];
 
   home = {
