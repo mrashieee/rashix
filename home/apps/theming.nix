@@ -24,12 +24,12 @@
         hyprcursor.enable = true;
         package = pkgs.bibata-cursors;
         name = "Bibata-Modern-Ice";
-        size = 24;
+        size = 18;
     };
 
     home.sessionVariables = {
         XCURSOR_THEME = "Bibata-Modern-Ice";
-        XCURSOR_SIZE = "24";
+        XCURSOR_SIZE = "18";
     };
 
     dconf = {
