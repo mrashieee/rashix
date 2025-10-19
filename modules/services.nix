@@ -30,7 +30,14 @@
 
   # System services
   security.polkit.enable = true;
-  xdg.portal.enable = true;
+  xdg.portal = {
+    enable = true;
+    wlr.enable = true;
+
+    extraPortals = [
+      pkgs.xdg-desktop-portal-wlr
+    ];
+  };
   services.printing.enable = true;
   services.gvfs.enable = true;
   services.dbus.enable = true;
@@ -68,7 +75,6 @@
     hyprlock
     hypridle
     xdg-desktop-portal
-    xdg-desktop-portal-wlr
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
     ffmpegthumbnailer
