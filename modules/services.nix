@@ -33,10 +33,6 @@
   xdg.portal = {
     enable = true;
     wlr.enable = true;
-
-    extraPortals = [
-      pkgs.xdg-desktop-portal-wlr
-    ];
   };
   services.printing.enable = true;
   services.gvfs.enable = true;
@@ -51,6 +47,7 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
+    wireplumber.enable = true;
     # jack.enable = true;      # Uncomment if needed
     # media-session.enable = true;  # Optional
   };
