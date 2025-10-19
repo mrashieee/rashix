@@ -22,7 +22,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, stylix, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, stylix, home-manager, mango, ... }@inputs: {
     nixosConfigurations = {
       lapix = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
