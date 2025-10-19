@@ -9,18 +9,12 @@
             name = "Adwaita-dark";
         };
 
-        icontheme = {
-            package = pkgs.adwaita-icon-theme;
-            name = "Adwaita";
-        };
-
-        font = {
-            name = "Sans";
-            size = 12;
-        };
-
         gtk3.extraConfig.Settings = "gtk-application-prefer-dark-theme=1";
         gtk4.extraConfig.Settings = "gtk-application-prefer-dark-theme=1";
+    };
+
+    qt = {
+        style.name = "adwaita-dark";
     };
 
     dconf = {
