@@ -51,14 +51,14 @@
   # Environment/system packages
   environment.systemPackages = with pkgs; [
     ntfs3g
-    nemo
     networkmanagerapplet
     blueman
-    kitty
     wlroots
     wl-clipboard
     cliphist
     xwayland-satellite
+    libjpeg
+    libtiff
     libnotify
     mako
     grim
@@ -70,8 +70,6 @@
     xdg-desktop-portal
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
-    rofi
-    waybar
     ffmpegthumbnailer
 
     # System utils

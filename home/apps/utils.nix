@@ -11,6 +11,14 @@
     python3
 
     # Utils
+    feh
+    eog
+    gthumb
+    vlc
+    nemo
+    kitty
+    rofi
+    waybar
     librewolf
     obsidian
     fastfetch
