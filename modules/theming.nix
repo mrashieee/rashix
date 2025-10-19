@@ -9,7 +9,6 @@
   # };
 
   environment.systemPackages = with pkgs; [
-    pywal
     pywal16
     matugen
     imagemagick
