@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 let
-  niriConfFile = "${config.home.homeDirectory}/confix/home/config/niri/config";
+  niriconfDir = "${config.home.homeDirectory}/confix/home/config/niri/config";
 in
 
 {
@@ -11,6 +11,6 @@ in
 
   home.activation.symlink-niri = lib.hm.dag.entryAfter ["writeBoundary"] ''
     mkdir -p ${config.home.homeDirectory}/.config
-    ln -sfn ${niriConfFile} ${config.home.homeDirectory}/.config/niri
+    ln -sfn ${niriconfDir} ${config.home.homeDirectory}/.config/niri
   '';
 }
