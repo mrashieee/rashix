@@ -15,6 +15,11 @@
       url = "github:nix-community/stylix/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # MangoWC
+    mango = {
+      url = "github:DreamMaoMao/mango";
+    };
   };
 
   outputs = { self, nixpkgs, stylix, home-manager, ... }@inputs: {
@@ -23,6 +28,7 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
+          mango.nixosModules.mango
           stylix.nixosModules.stylix
           ./hosts/lapix/configuration.nix
           home-manager.nixosModules.default
