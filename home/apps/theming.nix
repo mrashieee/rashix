@@ -30,6 +30,7 @@
     home.sessionVariables = {
         XCURSOR_THEME = "Bibata-Modern-Ice";
         XCURSOR_SIZE = "18";
+        NIXOS_OZONE_WL = "1";
     };
 
     dconf = {
