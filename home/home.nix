@@ -4,6 +4,7 @@
   imports =
     [
       ./apps/utils.nix
+      ./apps/theming.nix
       ./config/git.nix
       ./config/shell.nix
       ./config/hyprland/hyprland.nix
