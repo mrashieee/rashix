@@ -103,6 +103,7 @@
     ffmpegthumbnailer
 
     # System utils
+    psmisc
     btop
     nvtopPackages.full
   ];
