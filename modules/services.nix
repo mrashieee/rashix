@@ -77,8 +77,6 @@
 
   # Environment/system packages
   environment.systemPackages = with pkgs; [
-    impala
-    blueberry
     ntfs3g
     networkmanagerapplet
     blueman
@@ -103,7 +101,6 @@
     ffmpegthumbnailer
 
     # System utils
-    psmisc
     btop
     nvtopPackages.full
   ];
