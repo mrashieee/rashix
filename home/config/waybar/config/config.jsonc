@@ -6,10 +6,9 @@
     "gtk-layer-shell": true,
     "ipc": false,
     "reload_style_on_change": true,
-    "height": 45,
+    "height": 18,
     "modules-left": [
         "dwl/tags",
-        "wlr/taskbar",
         "dwl/window"
     ],
     "modules-right": [
@@ -79,16 +78,6 @@
       "critical-threshold": 10,
       "format-critical": " {temperatureC}°C",
       "format": ""
-    },
-    "wlr/taskbar": {
-      "format": "{icon}",
-      "icon-size": 22,
-      "all-outputs": false,
-      "tooltip-format": "{title}",
-      "markup": true,
-      "on-click": "activate",
-      "on-click-right": "close",
-      "ignore-list": ["Rofi", "wofi"]
     },
     "backlight": {
       "interval": 2,
