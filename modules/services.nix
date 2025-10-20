@@ -99,6 +99,7 @@
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
     ffmpegthumbnailer
+    jellyfin-ffmpeg
 
     # System utils
     btop
