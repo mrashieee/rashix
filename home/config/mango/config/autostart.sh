@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 # Waybar
-waybar
+waybar &
 
 # For Wallpaper
-swww-daemon
+swww-daemon &
 
 # Screen share
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots
