@@ -18,6 +18,7 @@
     nemo
     kitty
     rofi
+    fuzzel
     waybar
     librewolf
     obsidian
