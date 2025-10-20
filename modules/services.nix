@@ -35,6 +35,7 @@
   # Fonts
   fonts = {
     packages = with pkgs; [
+    maple-mono.NF-CN
     noto-fonts
     noto-fonts-emoji
     noto-fonts-cjk-sans
