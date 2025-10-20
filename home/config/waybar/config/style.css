@@ -1,0 +1,193 @@
+@import "colors.css";
+@define-color warning #e5c07b;
+@define-color critical #e06c75;
+@define-color inactive #6a7a71;
+
+* {
+    color: @on_surface;
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "sans-serif" ;
+    font-size: 12px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    margin-top: 10px;
+}
+
+.modules-left, .modules-right {
+    margin-left: 8px;  /* Original margin + 2px */
+    margin-right: 8px; /* Original margin + 2px */
+}
+#workspaces button {
+  all: initial;
+  padding: 0 6px;
+  margin: 0 1.5px;
+  min-width: 9px;
+}
+
+#workspaces button.empty {
+  opacity: 0.5;
+}
+
+/* --- General Module Styles --- */
+#backlight,
+#window,
+#mpris,
+#cpu,
+#memory,
+#temperature,
+#tray,
+#bluetooth,
+#network,
+#pulseaudio,
+#battery,
+#clock {
+    background-color: @on_secondary_fixed;
+    color: @on_surface;
+    padding: 0 10px;
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+#backlight:hover,
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#bluetooth:hover,
+#network:hover,
+#pulseaudio:hover,
+#battery:hover {
+    background-color: @on_surface;
+    color: @on_secondary_fixed;
+}
+
+/* --- Specific Module Styles & Overrides --- */
+#window,
+#custom-notification {
+    margin: 5px 0;
+    background: @on_secondary_fixed;
+    padding: 0 10px;
+    border-radius: 16px;
+    margin-left: 5px;
+    color: @on_surface;
+}
+
+#mpris {
+    margin: 5px 0;
+    background: @on_secondary_fixed;
+    padding: 0 10px;
+    border-radius: 16px;
+    margin-left: 5px;
+    color: @on_surface;
+}
+
+window#waybar.empty #window {
+    background: transparent;
+    padding: 0;
+    margin-left: 0;
+}
+
+#tray-expander {
+  background-color: @on_secondary_fixed;
+  color: @on_surface;
+  margin: 5px 0;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  padding-left: 10px;
+}
+
+#battery {
+    margin: 5px 0;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding-left: 10px;
+}
+
+#tray {
+    padding-left: 10px;
+}
+
+#clock {
+    background-color: @on_surface;
+    color: @on_secondary_fixed;
+    border-radius: 16px;
+    padding-right: 10px;
+    margin-left: 5px;
+}
+
+#clock:hover {
+    background-color: @on_secondary_fixed;
+    color: @on_surface;
+}
+
+#workspaces {
+    background-color: @on_secondary_fixed;
+    color: @on_surface;
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+    border-radius: 16px;
+    padding: 0 3px;
+}
+
+#workspaces button {
+    color: @inactive;
+    background: transparent;
+    padding: 0 6px;
+    border-radius: 10px;
+}
+
+#workspaces button:hover {
+    background-color: alpha(#B9F6CA, 0.1);
+}
+
+#workspaces button.active {
+    color: @accent;
+}
+
+/* --- Module States --- */
+#network.disconnected,
+#bluetooth.disabled,
+#pulseaudio.muted {
+    color: @critical;
+}
+
+#battery.warning:not(.charging) {
+    color: @warning;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: @accent;
+}
+
+@keyframes blink {
+    to {
+        background-color: @critical;
+        color: @background;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: @critical;
+    color: @background;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* --- Tooltip --- */
+tooltip {
+    background-color: @on_secondary_fixed;
+    border-radius: 16px;
+    padding: 8px 12px;
+    opacity: 0.9;
+}
+
+tooltip label {
+    color: @on_surface;
+}

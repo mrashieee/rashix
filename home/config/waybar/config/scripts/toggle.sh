@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 
-# Check if Waybar running
-if pgrep -x "waybar" > /dev/null; then
-    echo "Waybar is running..."
-    pkill -USR2 waybar
+# Checking if any waybar process
+if pgrep -f "waybar" >/dev/null; then
+    pkill -f "waybar"
 else
-    echo "Waybar not running..."
-    nohup waybar > /dev/null 2>&1 &
+    nohup waybar >/dev/null 2>&1 &
 fi

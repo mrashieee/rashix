@@ -76,6 +76,9 @@
 
   # Environment/system packages
   environment.systemPackages = with pkgs; [
+    impala
+    blueberry
+    wiremix
     ntfs3g
     networkmanagerapplet
     blueman
