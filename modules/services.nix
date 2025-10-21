@@ -8,10 +8,7 @@
       wifi = {
         powersave = false;
       };
-   };
-   wireless = {
-    iwd.enable = true;
-   };
+    };
   };
   hardware.bluetooth.enable = true;
 
@@ -82,7 +79,6 @@
 
   # Environment/system packages
   environment.systemPackages = with pkgs; [
-    impala
     ntfs3g
     networkmanagerapplet
     blueman
