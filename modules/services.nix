@@ -101,6 +101,7 @@
     xdg-desktop-portal-hyprland
     ffmpegthumbnailer
     jellyfin-ffmpeg
+    wlogout
 
     # System utils
     btop
