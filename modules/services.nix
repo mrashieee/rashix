@@ -2,11 +2,16 @@
 
 {
   # Networking & Bluetooth
-  networking.networkmanager = {
-    enable = true;
-    wifi = {
-      powersave = false;
-    };
+  networking = {
+    networkmanager = {
+      enable = true;
+      wifi = {
+        powersave = false;
+      };
+   };
+   wireless = {
+    iwd.enable = true;
+   };
   };
   hardware.bluetooth.enable = true;
 
@@ -77,6 +82,7 @@
 
   # Environment/system packages
   environment.systemPackages = with pkgs; [
+    impala
     ntfs3g
     networkmanagerapplet
     blueman
