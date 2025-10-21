@@ -51,14 +51,6 @@
       "on-click-right": "swaync-client -d -sw",
       "escape": true
     },
-    "custom/updates": {
-        "format": "󰚰 {}",
-        "interval": 300,                     // every 5 min
-        "exec": "i=$(checkupdates); echo \"$i\" |wc -l; echo \"$i\" |column -t |tr '\n' '\r'",       // # of updates and tooltip details
-        "exec-if": "exit 0",                  // always run; consider advanced run conditions
-        "on-click": "kitty -e yay -Syu", // update system
-        "signal": 8
-    },
     "keyboard-state": {
         "numlock": false,
         "scrolllock": false,
