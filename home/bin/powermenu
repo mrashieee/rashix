@@ -20,7 +20,7 @@ case "$chosen" in
     systemctl suspend
     ;;
   "$logout")
-    niri msg action quit
+    quit
     ;;
   *)
     exit 0
