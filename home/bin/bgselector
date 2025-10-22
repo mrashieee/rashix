@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-wall_dir="$HOME/Pictures/wallpapers"
+wall_dir="$HOME/confix/assets/wallpapers"
 cache_dir="$HOME/.cache/thumbnails/bgselector"
 
 mkdir -p "$wall_dir"
