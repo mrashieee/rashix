@@ -1,5 +1,7 @@
 { config, pkgs, lib, ... }:
-
+let
+  scriptNames = [ "applauncher" "bgselector" "powermenu" ];
+in 
 {
   programs.bash = {
     enable = true;
@@ -18,7 +20,4 @@
   home.file.".local/bin" = {
     source = ../bin;
   };
-  home.activation.makeScriptsExecutable = lib.hm.dag.entryAfter ["writeBoundary"] ''
-    chmod +x ${config.home.homeDirectory}/.local/bin/*
-  '';
 }
