@@ -11,6 +11,14 @@
         "dwl/tags",
         "dwl/window"
     ],
+    "modules-center":[
+        "custom/nixos1",
+        "custom/nixos2",
+        "custom/nixos3",
+        "custom/nixos4",
+        "custom/nixos5",
+        "custom/nixos6"
+    ],
     "modules-right": [
         "tray",
         "network",
@@ -23,6 +31,36 @@
         "custom/notification",
         "custom/power"
     ],
+    "custom/nixos1":{
+      "format": "",
+      "tooltip": false,
+      "interval": 0
+    },
+    "custom/nixos2":{
+      "format": "",
+      "tooltip": false,
+      "interval": 0
+    },
+    "custom/nixos3":{
+      "format": "",
+      "tooltip": false,
+      "interval": 0
+    },
+    "custom/nixos4":{
+      "format": "",
+      "tooltip": false,
+      "interval": 0
+    },
+    "custom/nixos5":{
+      "format": "",
+      "tooltip": false,
+      "interval": 0
+    },
+    "custom/nixos6":{
+      "format": "",
+      "tooltip": false,
+      "interval": 0
+    },
     "dwl/tags": {
       "num-tags": 9,
       "hide-vacant": true

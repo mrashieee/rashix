@@ -50,6 +50,48 @@ tooltip {
   margin-bottom: 0px;
 }
 
+#custom-nixos1 {
+  font-family: "FiraCode Nerd Font";
+  font-size: 18px;
+  color: @color1;
+  margin: 0 6px;
+  min-width: 24px;
+}
+#custom-nixos2 {
+  font-family: "FiraCode Nerd Font";
+  font-size: 18px;
+  color: @color2;
+  margin: 0 6px;
+  min-width: 24px;
+}
+#custom-nixos3 {
+  font-family: "FiraCode Nerd Font";
+  font-size: 18px;
+  color: @color3;
+  margin: 0 6px;
+  min-width: 24px;
+}
+#custom-nixos4 {
+  font-family: "FiraCode Nerd Font";
+  font-size: 18px;
+  color: @color4;
+  margin: 0 6px;
+  min-width: 24px;
+}
+#custom-nixos5 {
+  font-family: "FiraCode Nerd Font";
+  font-size: 18px;
+  color: @color5;
+  margin: 0 6px;
+  min-width: 24px;
+}
+#custom-nixos6 {
+  font-family: "FiraCode Nerd Font";
+  font-size: 18px;
+  color: @color6;
+  margin: 0 6px;
+  min-width: 24px;
+}
 
 #tags {
   border-radius: 4px;
