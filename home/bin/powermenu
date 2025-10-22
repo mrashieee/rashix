@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+# Menu options
+shutdown="$(printf '\uf16f')"
+reboot="$(printf '\ue5d5')"
+suspend="$(printf '\uef44')"
+logout="$(printf '\ue9ba')"
+
+# Give options to rofi and save choice
+chosen="$(echo -e "$shutdown\n$reboot\n$suspend\n$logout" | rofi -dmenu -config "$HOME/.config/rofi/powermenu.rasi" )"
+
+case "$chosen" in
+  "$shutdown")
+    poweroff
+    ;;
+  "$reboot")
+    reboot
+    ;;
+  "$suspend")
+    systemctl suspend
+    ;;
+  "$logout")
+    niri msg action quit
+    ;;
+  *)
+    exit 0
+    ;;
+esac

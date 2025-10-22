@@ -16,7 +16,7 @@
     '';
   };
   home.sessionPath = [ "$HOME/.local/bin" ];
-  home.file.".local/bin/scripts" = {
+  home.file.".local/bin" = {
     source = ../bin;
     executable = true;
   };
