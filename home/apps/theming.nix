@@ -41,4 +41,13 @@
             };
         };
     };
+
+    home.packages = with pkgs; [
+        hellwal
+        pywal16
+        watchdog
+        matugen
+        imagemagick
+        swww
+    ];
 }
