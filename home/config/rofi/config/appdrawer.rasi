@@ -5,7 +5,7 @@ configuration {
     sort: true;
     sorting-method: "fzf";
     icon-theme: "Papirus";
-    display-drun: "";
+    display-drun: " ";
 }
 
 @theme "themes/appdrawer.rasi"   
