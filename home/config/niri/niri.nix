@@ -11,6 +11,7 @@ in
 
   home.activation.symlink-niri = lib.hm.dag.entryAfter ["writeBoundary"] ''
     mkdir -p ${config.home.homeDirectory}/.config
+    rm -rf ${config.home.homeDirectory}/.config/niri
     ln -sfn ${niriconfDir} ${config.home.homeDirectory}/.config/niri
   '';
 }

@@ -11,6 +11,8 @@
       ./config/niri/niri.nix
       ./config/waybar/waybar.nix
       ./config/mango/mango.nix
+      ./config/matugen/matugen.nix
+      ./config/kitty/kitty.nix
     ];
 
   home = {

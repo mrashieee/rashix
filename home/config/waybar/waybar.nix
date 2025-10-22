@@ -11,6 +11,7 @@ in
 
   home.activation.symlink-waybar = lib.hm.dag.entryAfter ["writeBoundary"] ''
     mkdir -p ${config.home.homeDirectory}/.config
+    rm -rf ${config.home.homeDirectory}/.config/waybar
     ln -sfn ${waybarconfDir} ${config.home.homeDirectory}/.config/waybar
   '';
 }

@@ -11,6 +11,7 @@ in
 
   home.activation.symlink-hypr = lib.hm.dag.entryAfter ["writeBoundary"] ''
     mkdir -p ${config.home.homeDirectory}/.config
+    rm -rf ${config.home.homeDirectory}/.config/hypr
     ln -sfn ${hyprconfDir} ${config.home.homeDirectory}/.config/hypr
   '';
 }
