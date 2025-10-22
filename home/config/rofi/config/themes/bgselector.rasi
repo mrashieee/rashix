@@ -1,0 +1,36 @@
+// Global
+* {
+    background-color: transparent;
+}
+
+// Window
+window {
+    background-color: rgba(0,0,0,0.9);
+    fullscreen: true;    
+}
+
+// Main Box
+mainbox {
+    children: [listview];
+    padding: 25% 0%;
+}
+
+// Listview
+listview {
+    padding: 0px 10px;
+    spacing: 10px;
+    columns: 7;
+    flow: horizontal;
+    children: [element-icon];
+}
+element {
+    border-radius: 10px;
+}
+element.selected {
+    border: 2px;
+    border-color: white;
+}
+element-icon {
+    size: 229px 540px;
+    horizontal-align: 0;
+}

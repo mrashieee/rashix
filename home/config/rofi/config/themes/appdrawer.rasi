@@ -1,0 +1,56 @@
+// Global
+* {
+    background-color: transparent;
+    text-color: rgba(255, 255, 255, 1);
+    font: "JetBrainsMono Nerd Font 12";
+}
+
+// Window 
+window {
+    fullscreen: true;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+// Main Box
+mainbox {
+  padding: 10%;
+  spacing: 4em;
+}
+
+// Input Bar
+inputbar {
+  background-color: rgba(32,32,32,0.85);
+  children: ["prompt", "entry"];
+  border-radius: 5px;
+  margin: 0 30%;
+  padding: 0.9em;
+  spacing: 0.5em;
+}
+entry {
+  placeholder: "Search:";
+  placeholder-color: rgba(255,255,255,0.5);
+}
+
+// List View
+listview {
+  columns: 8;
+  fixed-columns: true;
+  flow: horizontal;
+}
+element {
+  border-radius: 5px;
+  orientation: vertical;
+  padding: 2em;
+  children: [element-icon, element-text];
+  spacing: 0.5em;
+}
+element-icon {
+  size: 2em;
+}
+element-text {
+  highlight: none;
+  horizontal-align: 0.5;
+}
+element.selected {
+  background-color: rgba(32,32,32,0.85);
+}
