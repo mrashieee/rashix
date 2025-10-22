@@ -49,5 +49,6 @@
         matugen
         imagemagick
         swww
+        pywalfox-native
     ];
 }
