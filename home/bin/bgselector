@@ -20,9 +20,9 @@ wall_selection=$(ls "$wall_dir" | while read -r A; do echo -en "$A\x00icon\x1f$c
 
 # Set wallpaper and update waybar color
 if [ -n "$wall_selection" ]; then
-	swww img "$wall_dir/$wall_selection" -t grow --transition-duration 1 --transition-fps 75
+	wal -i $wall_dir/$wall_selection
+    matugen image $wall_dir/$wall_selection
 	sleep 0.2
-	colorwaybar "$wall_dir/$wall_selection"
 	exit 0
 else
 	exit 1
