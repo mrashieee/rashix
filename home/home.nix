@@ -13,6 +13,7 @@
       ./config/mango/mango.nix
       ./config/matugen/matugen.nix
       ./config/kitty/kitty.nix
+      ./config/rofi/rofi.nix
     ];
 
   home = {
