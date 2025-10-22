@@ -21,7 +21,6 @@
     fuzzel
     waybar
     librewolf
-    chromium
     obsidian
     fastfetch
     vesktop
