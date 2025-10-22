@@ -6,7 +6,7 @@
     "gtk-layer-shell": true,
     "ipc": false,
     "reload_style_on_change": true,
-    "height": 18,
+    "height": 36,
     "modules-left": [
         "dwl/tags",
         "dwl/window"
@@ -92,7 +92,7 @@
     },
     "tray": {
       "interval": 1,
-      "icon-size": 21,
+      "icon-size": 12,
       "spacing": 10
     },
     "network": {
