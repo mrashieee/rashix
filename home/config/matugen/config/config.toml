@@ -1,0 +1,14 @@
+[config.wallpaper]
+command = "swww"
+arguments = ["img", "--transition-type", "fade"]
+set = true
+
+[templates.waybar]
+input_path = '~/.cache/wal/colors-waybar.css'
+output_path = '~/.config/waybar/colors.css'
+post_hook = 'pkill -SIGUSR2 waybar'
+
+[templates.kitty]
+input_path = '~/.cache/wal/colors-kitty.conf'
+output_path = '~/.config/kitty/colors.conf'
+post_hook = 'pkill -SIGUSR1 kitty'
