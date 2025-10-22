@@ -20,7 +20,7 @@ case "$chosen" in
     systemctl suspend
     ;;
   "$logout")
-    quit
+    pkill mango
     ;;
   *)
     exit 0
