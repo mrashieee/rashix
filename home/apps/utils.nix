@@ -1,6 +1,6 @@
  { config, pkgs, ... }:
 
- { 
+ {
   # Home utils
   home.packages = with pkgs; [
     # Development
@@ -26,6 +26,7 @@
     vesktop
     stremio
     libreoffice-fresh
+    openrgb-with-all-plugins
 
     # Gaming
     steam

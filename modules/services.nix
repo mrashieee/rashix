@@ -54,27 +54,32 @@
   };
 
   # System services
-  security.polkit.enable = true;
+  security= {
+    polkit.enable = true;
+    rtkit.enable = true;
+  };
+  
   xdg.portal = {
     enable = true;
     wlr.enable = true;
   };
-  services.printing.enable = true;
-  services.gvfs.enable = true;
-  services.dbus.enable = true;
-  services.udisks2.enable = true;
-
-  # Pipewire sound
-  services.pulseaudio.enable = false;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    wireplumber.enable = true;
-    # jack.enable = true;      # Uncomment if needed
-    # media-session.enable = true;  # Optional
+  
+  services = {
+    hardware.openrgb.enable = true;
+    printing.enable = true;
+    gvfs.enable = true;
+    dbus.enable = true;
+    udisks2.enable = true;
+    pulseaudio.enable = false;
+    pipewire = {
+      enable = true;
+      alsa.enable = true;
+      alsa.support32Bit = true;
+      pulse.enable = true;
+      wireplumber.enable = true;
+      # jack.enable = true;      # Uncomment if needed
+      # media-session.enable = true;  # Optional
+    };
   };
 
   # Environment/system packages
