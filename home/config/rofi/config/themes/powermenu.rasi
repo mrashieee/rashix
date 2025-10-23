@@ -33,5 +33,5 @@ element-text {
     horizontal-align: 0.5;
 }
 element.selected {
-    background-color: rgba(32, 32, 32, 0.85);
+    background-color: rgba(10, 10, 10, 0.85);
 }
