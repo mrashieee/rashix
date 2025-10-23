@@ -8,7 +8,7 @@
 // Window
 window {
     fullscreen: true;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.76);
 }
 
 // Main Box
