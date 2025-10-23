@@ -1,7 +1,12 @@
 [config.wallpaper]
 command = "swww"
-arguments = ["img", "--transition-type", "fade"]
+arguments = ["img", "--transition-type", "fade", "--transition-fps", "60"]
 set = true
+
+[templates.mango]
+input_path =  './templates/mango.conf'
+output_path = '~/.config/mango/colors.conf'
+post_hook = 'mmsg -d reload_config'
 
 [templates.waybar]
 input_path = '~/.cache/wal/colors-waybar.css'
@@ -16,7 +21,6 @@ post_hook = 'pkill -SIGUSR1 kitty'
 [templates.gtk3]
 input_path = "./templates/gtk-colors.css"
 output_path = '~/.config/gtk-3.0/colors.css'
-
 
 [templates.gtk4]
 input_path = "./templates/gtk-colors.css"
