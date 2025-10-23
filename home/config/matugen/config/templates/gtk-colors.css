@@ -2,7 +2,6 @@
  adw-gtk-theme colors
  Generated with Matugen
  GTK 3
- https://github.com/lassekongo83/adw-colors/blob/main/HOWTO.md
 */
 
 @define-color window_bg_color {{colors.surface_dim.default.hex}};
@@ -53,9 +52,6 @@
 /*
  adw-gtk-theme colors
  Generated with Matugen
-
- GTK 4.16+
- https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/_colors.scss
 */
 
 :root {
