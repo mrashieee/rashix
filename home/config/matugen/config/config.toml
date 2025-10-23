@@ -8,6 +8,11 @@ input_path =  './templates/mango.conf'
 output_path = '~/.config/mango/colors.conf'
 post_hook = 'mmsg -d reload_config'
 
+[templates.hyprland]
+input_path = '~/.config/matugen/templates/hyprland-colors.conf'
+output_path = '~/.config/hypr/colors.conf'
+post_hook = 'hyprctl reload'
+
 [templates.waybar]
 input_path = '~/.cache/wal/colors-waybar.css'
 output_path = '~/.config/waybar/colors.css'
