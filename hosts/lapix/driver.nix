@@ -8,8 +8,6 @@
     [ nvidia-vaapi-driver ];
     };
 
-    boot.kernelPackages = pkgs.linuxPackages_latest; 
-
     services.xserver.videoDrivers =
     [ "nvidia" ];
 
