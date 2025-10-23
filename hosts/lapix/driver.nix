@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   hardware.graphics = {
@@ -8,10 +8,13 @@
     [ nvidia-vaapi-driver ];
     };
 
+    boot.kernelPackages = pkgs.linuxPackages_latest; 
+
     services.xserver.videoDrivers =
     [ "nvidia" ];
 
     hardware.nvidia = {
+      package = config.boot.kernelPackages.nvidiaPackages.stable;
       open = false;
       nvidiaSettings = true;
       modesetting.enable = true;
