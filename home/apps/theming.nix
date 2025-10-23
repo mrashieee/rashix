@@ -5,15 +5,23 @@
         enable = true;
 
         theme = {
-            package = pkgs.gnome-themes-extra;
-            name = "Adwaita-dark";
+            package = pkgs.adw-gtk3;
+            name = "adw-gtk3-dark";
+        };
+
+        iconTheme = {
+            package = pkgs.papirus-icon-theme;
+            name = "Papirus-Dark";
         };
 
         gtk3.extraConfig.Settings = "gtk-application-prefer-dark-theme=1";
         gtk4.extraConfig.Settings = "gtk-application-prefer-dark-theme=1";
     };
 
+
     qt = {
+        enable = true;
+        platformTheme = "gtk";
         style.name = "adwaita-dark";
     };
 
@@ -38,6 +46,7 @@
         settings = {
             "org/gnome/desktop/interface" = {
                 color-scheme = "prefer-dark";
+                gtk-theme = "adw-gtk3-dark";
             };
         };
     };
