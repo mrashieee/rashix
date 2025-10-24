@@ -11,7 +11,7 @@ in
     initExtra = ''
       # Run fastfetch
       ${pkgs.fastfetch}/bin/fastfetch
-
+      export TERMINAL = kitty
       # Set Prompt
       # export PS1="\[\e[38;5;75m\]\u@\h \[\e[38;5;113m\]\w \[\e[38;5;189m\]\$ \[\e[0m\]"
     '';
