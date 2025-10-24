@@ -15,6 +15,7 @@
     eog
     gthumb
     mpv
+    mpvpaper
     vlc
     nemo
     kitty
