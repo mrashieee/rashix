@@ -7,12 +7,17 @@ mkdir -p "$wall_dir"
 mkdir -p "$cache_dir"
 
 # Generate thumbnails
-find "$wall_dir" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' -o -iname '*.gif' \) | while read -r imagen; do
-	filename="$(basename "$imagen")"
-	thumb="$cache_dir/$filename"
-	if [ ! -f "$thumb" ]; then
-		magick convert -strip "$imagen" -thumbnail x540^ -gravity center -extent 262x540 "$thumb"
-	fi
+find "$wall_dir" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' -o -iname '*.gif' \) |
+while read -r imagen; do
+    filename="$(basename "$imagen")"
+    thumb="$cache_dir/$filename"
+    if [ ! -f "$thumb" ]; then
+        if [[ "$imagen" =~ \.gif$ ]]; then
+            magick convert "$imagen[0]" -strip -thumbnail x540^ -gravity center -extent 262x540 "$thumb"
+        else
+            magick convert -strip "$imagen" -thumbnail x540^ -gravity center -extent 262x540 "$thumb"
+        fi
+    fi
 done
 
 # List wallpapers with icons for rofi
