@@ -1,6 +1,10 @@
  { config, pkgs, ... }:
 
  {
+  programs.rofi = {
+    enable = true;
+    plugins = [pkgs.rofi-emoji];
+  };
   # Home utils
   home.packages = with pkgs; [
     # Development
@@ -19,8 +23,7 @@
     vlc
     nemo
     kitty
-    rofi
-    rofi-emoji
+    bemoji
     fuzzel
     waybar
     librewolf
