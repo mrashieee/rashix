@@ -58,7 +58,6 @@
         matugen
         imagemagick
         swww
-        waypaper
         pywalfox-native
     ];
 }
