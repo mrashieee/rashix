@@ -90,6 +90,7 @@
     blueman
     wlroots
     wl-clipboard
+    wtype
     cliphist
     xwayland-satellite
     libjpeg
