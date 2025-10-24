@@ -105,7 +105,6 @@
     xdg-desktop-portal-wlr
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
-    gnome.gnome-video-thumbnailer
     ffmpegthumbnailer
     jellyfin-ffmpeg
     wlogout
