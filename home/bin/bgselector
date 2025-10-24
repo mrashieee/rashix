@@ -12,6 +12,7 @@ find "$wall_dir" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' 
 	thumb="$cache_dir/$filename"
 	if [ ! -f "$thumb" ]; then
 		ffmpeg -y -i "$imagen" -vf "thumbnail,scale=-1:540:force_original_aspect_ratio=increase,crop=262:540" -frames:v 1 "$thumb"
+		# magick convert -strip "$imagen" -thumbnail x540^ -gravity center -extent 262x540 "$thumb"
 	fi
 done
 
