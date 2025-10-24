@@ -20,6 +20,7 @@
     nemo
     kitty
     rofi
+    rofi-emoji
     fuzzel
     waybar
     librewolf
