@@ -14,6 +14,7 @@
     feh
     eog
     gthumb
+    mpv
     vlc
     nemo
     kitty
