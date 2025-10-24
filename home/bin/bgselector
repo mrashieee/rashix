@@ -7,7 +7,7 @@ mkdir -p "$wall_dir"
 mkdir -p "$cache_dir"
 
 # Generate thumbnails
-find "$wall_dir" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \) | while read -r imagen; do
+find "$wall_dir" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' -o -iname '*.gif' \) | while read -r imagen; do
 	filename="$(basename "$imagen")"
 	thumb="$cache_dir/$filename"
 	if [ ! -f "$thumb" ]; then
