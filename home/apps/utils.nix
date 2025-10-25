@@ -33,6 +33,8 @@
     stremio
     libreoffice-fresh
     openrgb-with-all-plugins
+    zip
+    unzip
 
     # Gaming
     steam
