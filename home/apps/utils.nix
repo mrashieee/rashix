@@ -1,10 +1,6 @@
  { config, pkgs, ... }:
 
  {
-  programs.rofi = {
-    enable = true;
-    plugins = [pkgs.rofi-emoji];
-  };
   # Home utils
   home.packages = with pkgs; [
     # Development
@@ -26,6 +22,9 @@
     kitty
     bemoji
     fuzzel
+    rofi-wayland
+    rofi-wayland-unwrapped
+    rofi-emoji-wayland
     waybar
     librewolf
     obsidian
