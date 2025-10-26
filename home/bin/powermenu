@@ -20,7 +20,7 @@ case "$chosen" in
     systemctl suspend
     ;;
   "$logout")
-    loginctl terminate-session self
+    loginctl terminate-user $USER
     ;;
   *)
     exit 0
