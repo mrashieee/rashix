@@ -10,6 +10,13 @@
     nodejs
     python3
 
+    # Entertainment
+    blanket
+    vlc
+    stremio
+    vesktop
+    spotify
+
     # Utils
     feh
     eog
@@ -17,7 +24,6 @@
     imv
     mpv
     mpvpaper
-    vlc
     nemo
     kitty
     bemoji
@@ -29,8 +35,6 @@
     librewolf
     obsidian
     fastfetch
-    vesktop
-    stremio
     libreoffice-fresh
     openrgb-with-all-plugins
     zip
