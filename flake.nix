@@ -40,6 +40,9 @@
               users = {
                 rashocean = import ./home/home.nix;
               };
+              sharedModules = [
+                mango.hmModules.mango
+              ];
               backupFileExtension = "backup";
             };
           }
