@@ -344,6 +344,15 @@ window-rule {
     open-floating true
 }
 
+// Open the rofi as floating by default.
+window-rule {
+    // This app-id regular expression will work for both:
+    // - host Firefox (app-id is "firefox")
+    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
+    match app-id=r#"rofi$"# title=""
+    open-floating true
+}
+
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
 /-window-rule {
@@ -379,15 +388,16 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
+    Mod+W hotkey-overlay-title="Wallpaper Selector" { spawn "~/.local/bin/bgselector"; }
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+E hotkey-overlay-title="File Manager" { spawn "dolphin"; }
-    Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
+    Mod+Space hotkey-overlay-title="Open AppLauncher" { spawn "~/.local/bin/applauncher"; }
+    // Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
     Super+B hotkey-overlay-title="Browser Application" { spawn "librewolf"; }
     Super+O hotkey-overlay-title="Note-Taking Application" { spawn "obsidian"; }
     Super+C hotkey-overlay-title="Coding Application" { spawn "code"; }
-    Super+R hotkey-overlay-title="waybar refresh" { spawn ".config/waybar/scripts/launch.sh"; }
-    Super+Shift+Space hotkey-overlay-title="waybar toggle" { spawn ".config/waybar/scripts/toggle.sh"; }
+    Super+R hotkey-overlay-title="waybar refresh" { spawn "pkill -USR1 waybar"; }
+    Super+Shift+Space hotkey-overlay-title="waybar toggle" { spawn "pkill -USR2 waybar"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
