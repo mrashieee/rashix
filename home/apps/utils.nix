@@ -18,6 +18,7 @@
     feh
     eog
     gthumb
+    imv
     mpv
     mpvpaper
     vlc
