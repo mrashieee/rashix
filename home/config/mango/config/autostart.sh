@@ -1,0 +1,1 @@
+/nix/store/8i82p7qlv2pinrd6x1hvvc58jjf55jyb-home-manager-files/.config/mango/autostart.sh
