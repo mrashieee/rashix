@@ -1,1 +1,14 @@
-/nix/store/8i82p7qlv2pinrd6x1hvvc58jjf55jyb-home-manager-files/.config/mango/autostart.sh
+set +e
+
+# Waybar
+waybar &
+
+# For Wallpaper
+swww-daemon &
+
+# Hypridle
+# hypridle &
+
+# Screen share
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots
+systemctl --user restart xdg-desktop-portal{,-wlr}.service
