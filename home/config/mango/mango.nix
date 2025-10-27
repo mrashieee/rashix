@@ -19,6 +19,10 @@ in
     autostart_sh = ''
       set +e
 
+      # Clipboard Watcher
+      wl-paste --type text --watch cliphist store
+      wl-paste --type image --watch cliphist store
+
       # Waybar
       waybar &
 
