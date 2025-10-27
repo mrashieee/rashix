@@ -93,6 +93,11 @@
       enable = true;
       packages = with pkgs; [
         "com.github.PintaProject.Pinta"
+        "org.localsend.localsend_app"
+        "com.hperrin.StreamOverlay"
+        "org.kde.okular"
+        "org.gnome.Snapshot"
+        "org.gnome.Calculator"
       ];      
     };
   };
