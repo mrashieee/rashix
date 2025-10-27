@@ -21,14 +21,21 @@
       url = "github:DreamMaoMao/mango";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # Flatpak
+    nix-flatpak = {
+      url = "github:gmodena/nix-flatpak/?ref=latest";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, stylix, home-manager, mango, ... }@inputs: {
+  outputs = { self, nixpkgs, stylix, home-manager, mango, nix-flatpak, ... }@inputs: {
     nixosConfigurations = {
       lapix = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
+          nix-flatpak.nixosModules.nix-flatpak
           mango.nixosModules.mango
           stylix.nixosModules.stylix
           ./hosts/lapix/configuration.nix

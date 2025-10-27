@@ -23,7 +23,6 @@
         cudaSupport = true;
       }
     );
-
     plugins = with pkgs.obs-studio-plugins; [
       wlrobs
       obs-backgroundremoval
@@ -33,6 +32,15 @@
       obs-vkcapture
     ];
   };
+
+  # For Flatpak
+  # systemd.services.flatpak-repo = {
+  #   wantedBy = [ "multi-user.target" ];
+  #   path = [ pkgs.flatpak ];
+  #   script = ''
+  #     flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+  #   '';
+  # };
 
   # Fonts
   fonts = {
@@ -80,6 +88,12 @@
       wireplumber.enable = true;
       # jack.enable = true;      # Uncomment if needed
       # media-session.enable = true;  # Optional
+    };
+    flatpak = {
+      enable = true;
+      packages = with pkgs; [
+        "com.github.PintaProject.Pinta"
+      ];      
     };
   };
 
