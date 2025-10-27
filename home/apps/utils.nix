@@ -35,6 +35,8 @@
     waybar
     librewolf
     obsidian
+    kdePackages.okular
+    gnome-solanum
     fastfetch
     libreoffice-fresh
     openrgb-with-all-plugins
