@@ -16,7 +16,8 @@
     stremio
     vesktop
     spotify
-    mangayomi
+    hakuneko
+    manga-tui
 
     # Utils
     feh
