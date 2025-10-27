@@ -16,6 +16,7 @@
     stremio
     vesktop
     spotify
+    mangayomi
 
     # Utils
     feh
@@ -26,6 +27,7 @@
     mpvpaper
     nemo
     kitty
+    emacs
     bemoji
     fuzzel
     rofi-wayland
