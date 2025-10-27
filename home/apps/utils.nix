@@ -16,8 +16,6 @@
     stremio
     vesktop
     spotify
-    hakuneko
-    manga-tui
 
     # Utils
     feh
