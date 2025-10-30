@@ -41,6 +41,7 @@
     openrgb-with-all-plugins
     zip
     unzip
+    cbonsai
 
     # Gaming
     steam

@@ -14,9 +14,7 @@
     isNormalUser = true;
     description = "Muhammad Rashid K";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-    kdePackages.kate
-    ];
+    packages = with pkgs; [];
     };
 
     # Define your hostname. 
