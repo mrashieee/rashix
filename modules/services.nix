@@ -128,6 +128,8 @@
     ffmpegthumbnailer
     jellyfin-ffmpeg
     wlogout
+    wineWowPackages.stable
+    winetricks
 
     # System utils
     btop
