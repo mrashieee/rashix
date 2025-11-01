@@ -9,6 +9,10 @@
         powersave = false;
       };
     };
+    nameservers = [
+        "8.8.8.8"
+        "1.1.1.1"
+      ];
   };
   hardware.bluetooth.enable = true;
 
