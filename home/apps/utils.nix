@@ -47,6 +47,5 @@
     steam
     lutris
     mangohud
-    path-of-building
     ];
 }

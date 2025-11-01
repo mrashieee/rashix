@@ -98,6 +98,7 @@
         "org.kde.okular"
         "org.gnome.Snapshot"
         "org.gnome.Calculator"
+        "community.pathofbuilding.PathOfBuilding"
       ];      
     };
   };
