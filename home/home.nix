@@ -7,7 +7,6 @@
       ./apps/theming.nix
       ./config/git.nix
       ./config/shell.nix
-      ./config/hyprland/hyprland.nix
       ./config/niri/niri.nix
       ./config/waybar/waybar.nix
       ./config/mango/mango.nix

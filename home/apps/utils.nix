@@ -9,7 +9,6 @@
     gcc
     nodejs
     python3
-    affinity-nix.packages.x86_64-linux.v3
 
     # Entertainment
     blanket

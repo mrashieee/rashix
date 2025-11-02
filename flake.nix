@@ -27,6 +27,7 @@
       url = "github:gmodena/nix-flatpak/?ref=latest";
     };
 
+    # Affinity
     affinity-nix = {
       url = "github:mrshmllow/affinity-nix";
     };
@@ -52,6 +53,9 @@
               };
               sharedModules = [
                 mango.hmModules.mango
+                {
+                  home.packages = [affinity-nix.packages.x86_64-linux.v3];
+                }
               ];
               backupFileExtension = "backup";
             };
