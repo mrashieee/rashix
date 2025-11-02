@@ -26,9 +26,13 @@
     nix-flatpak = {
       url = "github:gmodena/nix-flatpak/?ref=latest";
     };
+
+    affinity-nix = {
+      url = "github:mrshmllow/affinity-nix";
+    };
   };
 
-  outputs = { self, nixpkgs, stylix, home-manager, mango, nix-flatpak, ... }@inputs: {
+  outputs = { self, nixpkgs, stylix, home-manager, mango, nix-flatpak, affinity-nix, ... }@inputs: {
     nixosConfigurations = {
       lapix = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
