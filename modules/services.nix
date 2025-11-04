@@ -104,6 +104,7 @@
         "org.gnome.Snapshot"
         "org.gnome.Calculator"
         "community.pathofbuilding.PathOfBuilding"
+        "org.qbittorrent.qBittorrent"
       ];      
     };
   };
