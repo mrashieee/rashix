@@ -142,4 +142,8 @@
     btop
     nvtopPackages.full
   ];
+
+  nixpkgs.config.permittedInsecurePackages = [
+    "mbedtls-2.28.10"
+  ];
 }
