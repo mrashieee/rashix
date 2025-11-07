@@ -12,11 +12,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1762219463,
-        "narHash": "sha256-fIMpGLNZtNCCfvDRsc1cq3MAWC4Vdqf1qVr5PzWOod4=",
+        "lastModified": 1762466582,
+        "narHash": "sha256-1jbV0zdGt4gszZJtO7NlqwngXcprgr2g4PmxmO3zs34=",
         "owner": "mrshmllow",
         "repo": "affinity-nix",
-        "rev": "caebe653fe15dc3cac4616cc8c2a33975ff58b1b",
+        "rev": "138edd2e20f6ceab19de29c4b017b2a14f446da1",
         "type": "github"
       },
       "original": {
@@ -319,11 +319,11 @@
         "scenefx": "scenefx"
       },
       "locked": {
-        "lastModified": 1762435208,
-        "narHash": "sha256-w54258QuhZwtuIgk1WvJdZqcHLT9sLjuACATG0OfBU0=",
+        "lastModified": 1762526975,
+        "narHash": "sha256-fB+86WVMPLf0qOO7RRr5Ajnu4CWdG0YOoOEIiRuOoMI=",
         "owner": "DreamMaoMao",
         "repo": "mango",
-        "rev": "5bbe6c5c1ae30453360522fde7810a8bb140670e",
+        "rev": "fbdf7fdb346205bb8092ccacd1b8fbcd14406833",
         "type": "github"
       },
       "original": {
