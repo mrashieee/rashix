@@ -388,8 +388,8 @@ binds {
     Super+B hotkey-overlay-title="Browser Application" { spawn "librewolf"; }
     Super+O hotkey-overlay-title="Note-Taking Application" { spawn "obsidian"; }
     Super+C hotkey-overlay-title="Coding Application" { spawn "code"; }
-    Super+R hotkey-overlay-title="waybar refresh" { spawn "pkill -USR1 waybar"; }
-    Super+Shift+Space hotkey-overlay-title="waybar toggle" { spawn "pkill -USR2 waybar"; }
+    Super+R hotkey-overlay-title="waybar refresh" { spawn-sh "pkill -USR1 waybar"; }
+    Super+Shift+Space hotkey-overlay-title="waybar toggle" { spawn-sh "pkill -USR2 waybar"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
