@@ -80,6 +80,8 @@
   
   services = {
     hardware.openrgb.enable = true;
+    asusd.enable = true;
+    supergfxd.enable = true;
     printing.enable = true;
     gvfs.enable = true;
     dbus.enable = true;
@@ -141,6 +143,9 @@
     # System utils
     btop
     nvtopPackages.full
+    asusctl
+    supergfxctl
+    pciutils
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
