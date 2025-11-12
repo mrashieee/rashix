@@ -24,7 +24,8 @@ if [ -n "$wall_selection" ]; then
 	wal -i $wall_dir/$wall_selection
     matugen image $wall_dir/$wall_selection
 	sleep 0.2
-	openrgb -c $(sed 's/#//' ~/.cache/wal/rgb.css) -b 35
+	# openrgb -c $(sed 's/#//' ~/.cache/wal/rgb.css) -b 35
+	asusctl -k low aura static -c $(sed 's/#//' ~/.cache/wal/rgb.css)
 	exit 0
 else
 	exit 1
