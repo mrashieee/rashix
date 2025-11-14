@@ -16,6 +16,7 @@
     stremio
     vesktop
     spotify
+    krita
 
     # Utils
     feh
