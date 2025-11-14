@@ -9,14 +9,15 @@
         "nixpkgs": "nixpkgs_2",
         "nixpkgs-wine": "nixpkgs-wine",
         "on-linux": "on-linux",
+        "plugin-loader": "plugin-loader",
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1762586244,
-        "narHash": "sha256-po6o2DqL4WcTzKR3xGf2djajkKNipeQEFVPiaSwjGmg=",
+        "lastModified": 1763079145,
+        "narHash": "sha256-5FVzCpznxnWEhnlmGjdawhjapIAUzCsKSVI7V6p6xPo=",
         "owner": "mrshmllow",
         "repo": "affinity-nix",
-        "rev": "a71b769b0a5d53b15ea9df0f5ed37280f82575e3",
+        "rev": "f07c94d5771a07cb63b7010870ae49a5956b4b01",
         "type": "github"
       },
       "original": {
@@ -341,11 +342,11 @@
         "scenefx": "scenefx"
       },
       "locked": {
-        "lastModified": 1762756220,
-        "narHash": "sha256-frfMp+DrWFfJIkaueJwJo4i3+KzVFrcpN+9zVs3gl3M=",
+        "lastModified": 1763094727,
+        "narHash": "sha256-UPsLy0CHmbhVhgviSiMYpd4OxsTWCwazwLKyrmRGBjQ=",
         "owner": "DreamMaoMao",
         "repo": "mango",
-        "rev": "64d8764f58d6469ae641bde9079938702022f309",
+        "rev": "d2e0df024dc195fef8416b3a875c8344a87e9aaf",
         "type": "github"
       },
       "original": {
@@ -519,6 +520,18 @@
         "owner": "seapear",
         "repo": "AffinityOnLinux",
         "type": "github"
+      }
+    },
+    "plugin-loader": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-CCqT6TQHG7HqvxsnP/EC9Mg6A3KfNg5i/vGXW0exTxU=",
+        "type": "file",
+        "url": "https://github.com/noahc3/AffinityPluginLoader/releases/latest/download/affinitypluginloader-plus-winefix.tar.xz"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/noahc3/AffinityPluginLoader/releases/latest/download/affinitypluginloader-plus-winefix.tar.xz"
       }
     },
     "root": {
