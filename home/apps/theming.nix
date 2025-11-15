@@ -21,7 +21,7 @@
   qt = {
     enable = true;
     platformTheme.name = "kde";
-    style.name = "breeze-dark";
+    style.name = "adwaita-dark";
   };
 
   home.pointerCursor = {
