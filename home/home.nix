@@ -5,6 +5,7 @@
     [
       ./apps/utils.nix
       ./apps/theming.nix
+      ./apps/variables.nix
       ./config/git.nix
       ./config/shell.nix
       ./config/niri/niri.nix
