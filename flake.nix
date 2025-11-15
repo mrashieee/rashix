@@ -9,12 +9,6 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    
-    # Stylix theme input
-    stylix = {
-      url = "github:nix-community/stylix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
 
     # MangoWC
     mango = {
@@ -33,7 +27,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, stylix, home-manager, mango, nix-flatpak, affinity-nix, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, mango, nix-flatpak, affinity-nix, ... }@inputs: {
     nixosConfigurations = {
       lapix = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -41,7 +35,6 @@
         modules = [
           nix-flatpak.nixosModules.nix-flatpak
           mango.nixosModules.mango
-          stylix.nixosModules.stylix
           ./hosts/lapix/configuration.nix
           home-manager.nixosModules.default
           {
