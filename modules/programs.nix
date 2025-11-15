@@ -70,6 +70,7 @@
     wlogout
     wineWowPackages.unstable
     winetricks
+    dxvk
     freetype
 
     # System utils
