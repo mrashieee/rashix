@@ -18,15 +18,6 @@
     gtk4.extraConfig.Settings = "gtk-application-prefer-dark-theme=1";
   };
 
-
-  qt = {
-    enable = true;
-    style = {
-      package = pkgs.adwaita-qt;
-      name = "Adwaita-Dark";
-    };
-  };
-
   home.pointerCursor = {
     enable = true;
     gtk.enable = true;
