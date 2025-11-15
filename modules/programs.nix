@@ -36,6 +36,8 @@
       "community.pathofbuilding.PathOfBuilding"
       "org.qbittorrent.qBittorrent"
       "com.stremio.Stremio"
+      "dev.mariinkys.StarryDex"
+      "io.github.OpenToonz"
     ];      
   };
 
