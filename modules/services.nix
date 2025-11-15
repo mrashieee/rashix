@@ -52,7 +52,7 @@
     packages = with pkgs; [
     maple-mono.NF-CN
     noto-fonts
-    noto-fonts-emoji
+    noto-fonts-color-emoji
     noto-fonts-cjk-sans
     nerd-fonts.jetbrains-mono
     nerd-fonts.fira-code
@@ -107,6 +107,7 @@
         "org.gnome.Calculator"
         "community.pathofbuilding.PathOfBuilding"
         "org.qbittorrent.qBittorrent"
+        "com.stremio.Stremio"
       ];      
     };
   };
@@ -148,7 +149,4 @@
     pciutils
   ];
 
-  nixpkgs.config.permittedInsecurePackages = [
-    "mbedtls-2.28.10"
-  ];
 }

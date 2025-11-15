@@ -11,7 +11,7 @@
     okular
     kate
   ];
-  
+
   # services.xserver.desktopManager.gnome.enable = true;
 
   # Enable the COSMIC desktop environment

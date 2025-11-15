@@ -13,7 +13,6 @@
     # Entertainment
     blanket
     vlc
-    stremio
     vesktop
     spotify
     krita
@@ -30,9 +29,9 @@
     emacs
     bemoji
     fuzzel
-    rofi-wayland
-    rofi-wayland-unwrapped
-    rofi-emoji-wayland
+    rofi
+    # rofi-wayland-unwrapped
+    # rofi-emoji-wayland
     waybar
     librewolf
     obsidian
