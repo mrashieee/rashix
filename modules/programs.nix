@@ -70,6 +70,7 @@
     wlogout
     wineWowPackages.unstable
     winetricks
+    freetype
 
     # System utils
     btop
