@@ -42,6 +42,7 @@
     zip
     unzip
     cbonsai
+    cmatrix
 
     # Gaming
     steam
