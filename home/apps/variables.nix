@@ -19,8 +19,8 @@
   };
   
   xdg.mimeApps.defaultApplications = {
-    "inode/directory" = "nemo.desktop";
-    "application/x-directory" = "nemo.desktop";
-    "x-directory/normal" = "nemo.desktop";
+    "inode/directory" = "org.kde.dolphin.desktop";
+    "application/x-directory" = "org.kde.dolphin.desktop";
+    "x-directory/normal" = "org.kde.dolphin.desktop";
   };
 }
