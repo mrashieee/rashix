@@ -5,8 +5,6 @@
     XCURSOR_THEME = "Bibata-Modern-Ice";
     XCURSOR_SIZE = "18";
     NIXOS_OZONE_WL = "1";
-    Editor = "nano";
-    Visual = "nano";
   };
 
 
@@ -20,10 +18,9 @@
     };
   };
   
-  home.file.".local/bin/xdg-open".text = ''
-  #!/usr/bin/env bash
-  dolphin "$@"
-  '';
-  home.file.".local/bin/xdg-open".executable = true;
-
+  xdg.mimeApps.defaultApplications = {
+    "inode/directory" = "nemo.desktop";
+    "application/x-directory" = "nemo.desktop";
+    "x-directory/normal" = "nemo.desktop";
+  };
 }
