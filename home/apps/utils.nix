@@ -45,6 +45,7 @@
 
     # Gaming
     steam
+    steam-run
     lutris
     mangohud
     ];
