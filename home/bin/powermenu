@@ -20,7 +20,7 @@ case "$chosen" in
     systemctl suspend
     ;;
   "$logout")
-    loginctl terminate-user $USER
+    loginctl kill-session $XDG_SESSION_ID
     ;;
   *)
     exit 0
