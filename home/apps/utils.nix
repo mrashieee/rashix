@@ -30,8 +30,6 @@
     bemoji
     fuzzel
     rofi
-    # rofi-wayland-unwrapped
-    # rofi-emoji-wayland
     waybar
     librewolf
     obsidian
