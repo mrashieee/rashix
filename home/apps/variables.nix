@@ -19,5 +19,11 @@
       };
     };
   };
+  
+  home.file.".local/bin/xdg-open".text = ''
+  #!/usr/bin/env bash
+  dolphin "$@"
+  '';
+  home.file.".local/bin/xdg-open".executable = true;
 
 }
