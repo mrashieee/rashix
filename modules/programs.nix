@@ -68,7 +68,7 @@
     ffmpegthumbnailer
     jellyfin-ffmpeg
     wlogout
-    wineWowPackages.stable
+    wineWowPackages.unstable
     winetricks
 
     # System utils
@@ -77,5 +77,7 @@
     asusctl
     supergfxctl
     pciutils
+    mesa-demos
+    vulkan-tools
   ];
 }

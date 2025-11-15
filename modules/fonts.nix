@@ -13,6 +13,7 @@
     nerd-fonts.droid-sans-mono
     font-awesome
     material-symbols
+    freetype
   ];
   fontconfig = {
     defaultFonts = {
