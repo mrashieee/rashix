@@ -39,8 +39,6 @@
     openrgb-with-all-plugins
     zip
     unzip
-    cbonsai
-    cmatrix
 
     # Gaming
     steam

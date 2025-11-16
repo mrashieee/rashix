@@ -45,5 +45,8 @@
     imagemagick
     swww
     pywalfox-native
+    cbonsai
+    cmatrix
+    pipes
   ];
 }
