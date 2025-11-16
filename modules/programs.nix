@@ -74,6 +74,7 @@
     freetype
 
     # System utils
+    dconf
     btop
     nvtopPackages.full
     asusctl
