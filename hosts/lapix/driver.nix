@@ -1,6 +1,13 @@
 { config, pkgs, ... }:
 
 {
+  swapDevices = [
+    {
+      device = "/swapfile";
+      size = 16 * 1024;
+    }
+  ];
+
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
