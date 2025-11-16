@@ -1,12 +1,12 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, ... }:
 
 {
   home.sessionVariables = {
     XCURSOR_THEME = "Bibata-Modern-Ice";
     XCURSOR_SIZE = "18";
     NIXOS_OZONE_WL = "1";
-    QT_STYLE_OVERRIDE = lib.mkForce "adwaita-dark";
-    QT_QPA_PLATFORMTHEME = lib.mkForce "gtk";
+    QT_STYLE_OVERRIDE = "adwaita-dark";
+    QT_QPA_PLATFORMTHEME = "kde";
   };
 
 
