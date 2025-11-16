@@ -4,8 +4,16 @@
   # Enable the greeter.
 
   # For SDDM
-  services.displayManager.sddm.enable = true;
-  services.displayManager.sddm.wayland.enable = true;
+  services.displayManager.sddm = {
+    enable = true;
+    wayland.enable = true;
+    theme = "breeze";
+    settings = {
+      Theme = {
+        Background = "etc/nixos/wallpapers/nix-black.jpg";
+      };
+    };
+  };
 
   # services.xserver.displayManager.gdm.enable = true;
   # services.greetd = {
