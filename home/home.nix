@@ -14,6 +14,7 @@
       ./config/matugen/matugen.nix
       ./config/kitty/kitty.nix
       ./config/rofi/rofi.nix
+      ./config/wal/wal.nix
     ];
 
   home = {
