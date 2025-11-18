@@ -26,8 +26,8 @@
   xdg.portal = {
     enable = true;
     wlr.enable = true;
-    extraPortals = [ pkgs.kdePackages.xdg-desktop-portal-kde ];
-    config.common.default = "kde";
+    # extraPortals = [ pkgs.kdePackages.xdg-desktop-portal-kde ];
+    # config.common.default = "kde";
   };
   
   services = {

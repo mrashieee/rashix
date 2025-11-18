@@ -18,14 +18,14 @@
     gtk4.extraConfig.Settings = "gtk-application-prefer-dark-theme=1";
   };
 
-  qt = {
-    enable = true;
-    platformTheme.name = "kde";
-    style = {
-      package = pkgs.adwaita-qt;
-      name = "adwaita-dark";
-    };
-  };
+  # qt = {
+  #   enable = true;
+  #   platformTheme.name = "kde";
+  #   style = {
+  #     package = pkgs.adwaita-qt;
+  #     name = "adwaita-dark";
+  #   };
+  # };
 
   home.pointerCursor = {
     enable = true;

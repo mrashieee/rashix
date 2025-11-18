@@ -6,7 +6,7 @@
     XCURSOR_SIZE = "18";
     NIXOS_OZONE_WL = "1";
     QT_STYLE_OVERRIDE = "adwaita-dark";
-    QT_QPA_PLATFORMTHEME = "kde";
+    QT_QPA_PLATFORMTHEME = "gtk";
   };
 
 
