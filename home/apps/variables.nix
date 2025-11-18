@@ -10,7 +10,6 @@
     GTK_THEME = "adw-gtk3-dark";
   };
 
-
   dconf = {
     enable = true;
     settings = {
