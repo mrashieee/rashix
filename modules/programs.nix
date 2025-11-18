@@ -37,7 +37,7 @@
       "community.pathofbuilding.PathOfBuilding"
       "org.qbittorrent.qBittorrent"
       "com.stremio.Stremio"
-      "dev.mariinkys.StarryDex"
+      "com.pokemmo.PokeMMO"
       "io.github.OpenToonz"
     ];      
   };
