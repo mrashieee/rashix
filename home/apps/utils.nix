@@ -46,5 +46,6 @@
     steam-run
     lutris
     mangohud
+    rimsort
     ];
 }
