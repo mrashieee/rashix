@@ -22,7 +22,12 @@
       obs-vkcapture
     ];
   };
-  programs.xwayland.enable = true;
+  programs = {
+    xwayland.enable = true;
+    appimage.enable = true;
+    appimage.binfmt = true;
+  };
+
   
   # Flatpaks
   services.flatpak = {
