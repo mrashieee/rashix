@@ -25,6 +25,7 @@
     mpv
     mpvpaper
     nemo
+    file-roller
     kitty
     emacs
     bemoji
