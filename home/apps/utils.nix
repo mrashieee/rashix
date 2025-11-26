@@ -47,5 +47,6 @@
     lutris
     mangohud
     rimsort
+    mcpelauncher-ui-qt
     ];
 }
