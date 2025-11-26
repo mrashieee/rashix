@@ -44,6 +44,8 @@
       "com.stremio.Stremio"
       "com.pokemmo.PokeMMO"
       "io.github.OpenToonz"
+      "org.prismlauncher.PrismLauncher"
+      "io.mrarm.mcpelauncher"
     ];      
   };
 
