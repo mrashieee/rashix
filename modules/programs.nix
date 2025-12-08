@@ -37,6 +37,7 @@
       "org.localsend.localsend_app"
       "com.hperrin.StreamOverlay"
       "org.kde.okular"
+      "org.kde.okular.Plugin.EPub"
       "org.gnome.Snapshot"
       "org.gnome.Calculator"
       "community.pathofbuilding.PathOfBuilding"
