@@ -40,6 +40,7 @@
     kitty
     gnuplot
     texliveFull
+    zathura
     bemoji
     fuzzel
     rofi
