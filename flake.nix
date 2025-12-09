@@ -20,13 +20,6 @@
     nix-flatpak = {
       url = "github:gmodena/nix-flatpak/?ref=latest";
     };
-    
-    # Doom Emacs
-    nix-doom-emacs-unstraightened = {
-      url = "github:marienz/nix-doom-emacs-unstraightened";
-      # Optional, to download less. Neither the module nor the overlay uses this input.
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = { self, nixpkgs, home-manager, mango, nix-flatpak, ... }@inputs: {
@@ -48,7 +41,6 @@
               };
               sharedModules = [
                 mango.hmModules.mango
-                inputs.nix-doom-emacs-unstraightened.homeModule
               ];
               backupFileExtension = "backup";
             };
