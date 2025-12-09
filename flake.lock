@@ -1,5 +1,44 @@
 {
   "nodes": {
+    "doomemacs": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1765148465,
+        "narHash": "sha256-GgBP9SubDzbBM9BeP13fqsxIrtzQqe+u5b6iT/jezF0=",
+        "owner": "doomemacs",
+        "repo": "doomemacs",
+        "rev": "3ad2d9cdbb24d695e83724691a33b0e7b07d4b6e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "doomemacs",
+        "repo": "doomemacs",
+        "type": "github"
+      }
+    },
+    "emacs-overlay": {
+      "inputs": {
+        "nixpkgs": [
+          "nix-doom-emacs-unstraightened"
+        ],
+        "nixpkgs-stable": [
+          "nix-doom-emacs-unstraightened"
+        ]
+      },
+      "locked": {
+        "lastModified": 1765243761,
+        "narHash": "sha256-PSWBNrDWyg8Mgx0iubKPHwwzEkl3Er5U2zy39Ddw1hM=",
+        "owner": "nix-community",
+        "repo": "emacs-overlay",
+        "rev": "bfbeffef5baf1bee4eb6b0ff3b5137254088ddb8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "emacs-overlay",
+        "type": "github"
+      }
+    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": "nixpkgs-lib"
@@ -60,6 +99,29 @@
         "type": "github"
       }
     },
+    "nix-doom-emacs-unstraightened": {
+      "inputs": {
+        "doomemacs": "doomemacs",
+        "emacs-overlay": "emacs-overlay",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1765270042,
+        "narHash": "sha256-B7yJdo71GOwqa8E3ZNA49PBvur2pVs3tklqa1ZiL8UU=",
+        "owner": "marienz",
+        "repo": "nix-doom-emacs-unstraightened",
+        "rev": "39a6724614a4371a71dbe58ca670dac26580f409",
+        "type": "github"
+      },
+      "original": {
+        "owner": "marienz",
+        "repo": "nix-doom-emacs-unstraightened",
+        "type": "github"
+      }
+    },
     "nix-flatpak": {
       "locked": {
         "lastModified": 1739444422,
@@ -110,6 +172,7 @@
       "inputs": {
         "home-manager": "home-manager",
         "mango": "mango",
+        "nix-doom-emacs-unstraightened": "nix-doom-emacs-unstraightened",
         "nix-flatpak": "nix-flatpak",
         "nixpkgs": "nixpkgs"
       }
@@ -132,6 +195,21 @@
       "original": {
         "owner": "wlrfx",
         "repo": "scenefx",
+        "type": "github"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
         "type": "github"
       }
     }
