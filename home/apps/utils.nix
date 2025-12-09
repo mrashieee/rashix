@@ -14,7 +14,7 @@
 
   programs.doom-emacs = {
     enable = true;
-    doomDir = ../config/doomemacs;
+    doomDir = ../config/doom;
   };
 
  # Home utils
