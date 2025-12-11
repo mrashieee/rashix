@@ -41,6 +41,7 @@
     gnuplot
     texliveFull
     zathura
+    mupdf
     bemoji
     fuzzel
     rofi
