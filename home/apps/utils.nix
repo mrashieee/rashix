@@ -38,9 +38,9 @@
     nemo
     file-roller
     kitty
-    # gnuplot
-    # texliveFull
-    # zathura
+    gnuplot
+    texliveFull
+    zathura
     bemoji
     fuzzel
     rofi
