@@ -572,8 +572,8 @@ binds {
     // Mod+R { switch-preset-column-width-back; }
     // Mod+Shift+R { switch-preset-window-height; }
     // Mod+Ctrl+R { reset-window-height; }
-    Mod+F { maximize-column; }
-    Mod+Alt+F { fullscreen-window; }
+    Mod+Alt+F { maximize-column; }
+    Mod+F { fullscreen-window; }
     Mod+Shift+F { toggle-windowed-fullscreen; }
 
     // Expand the focused column to space not taken up by other fully visible columns.
