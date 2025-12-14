@@ -45,6 +45,7 @@
       "com.pokemmo.PokeMMO"
       "io.github.OpenToonz"
       "org.polymc.PolyMC"
+      "org.onlyoffice.desktopeditors"
     ];      
   };
 

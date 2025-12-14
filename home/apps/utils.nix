@@ -47,7 +47,6 @@
     rofi
     waybar
     librewolf-bin
-    wpsoffice
     obsidian
     gnome-solanum
     fastfetch
