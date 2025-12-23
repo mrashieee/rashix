@@ -21,7 +21,7 @@
     nodejs
     python3
     python313Packages.pip
-    python3Packages.opencv
+    python3Packages.opencv4
 
     # Entertainment
     blanket
