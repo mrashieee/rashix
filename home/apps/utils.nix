@@ -20,6 +20,8 @@
     gcc
     nodejs
     python3
+    python313Packages.pip
+    python3Packages.opencv
 
     # Entertainment
     blanket
