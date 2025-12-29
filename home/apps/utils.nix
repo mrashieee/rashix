@@ -20,8 +20,8 @@
     gcc
     nodejs
     python3
-    python313Packages.pip
-    python3Packages.opencv4
+    freecad
+    kicad
 
     # Entertainment
     blanket
