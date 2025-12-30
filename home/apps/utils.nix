@@ -48,7 +48,7 @@
     fuzzel
     rofi
     waybar
-    librewolf-bin
+    librewolf
     obsidian
     gnome-solanum
     fastfetch
