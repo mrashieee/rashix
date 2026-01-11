@@ -33,19 +33,20 @@ entry {
 
 // List View
 listview {
-  columns: 8;
+  columns: 3;
   fixed-columns: true;
-  flow: horizontal;
+  flow: vertical;
+  layout: vertical;
 }
 element {
   border-radius: 5px;
-  orientation: vertical;
+  orientation: horizontal;
   padding: 2em;
   children: [element-icon, element-text];
   spacing: 0.5em;
 }
 element-icon {
-  size: 2em;
+  size: 3em;
 }
 element-text {
   highlight: none;

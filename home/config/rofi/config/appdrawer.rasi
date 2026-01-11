@@ -8,4 +8,4 @@ configuration {
     display-drun: " ";
 }
 
-@theme "themes/appdrawer.rasi"   
+@theme "themes/appdrawer.rasi"
