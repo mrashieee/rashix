@@ -14,9 +14,15 @@
     extraPackages = with pkgs;
     [ nvidia-vaapi-driver ];
   };
+  
+  boot.kernelParams = [
+    "nvidia-drm.modeset=1"
+  ];
+
+  hardware.enableRedistributableFirmware = true;
 
   services.xserver.videoDrivers =
-    [ "modesetting" "nvidia" ];
+    [ "nvidia" ];
 
   hardware.nvidia = {
     open = false;
