@@ -2,14 +2,14 @@
 
 {
   programs.emacs = {
-  enable = true;
-  extraPackages = epkgs: [
-      epkgs.org
-      epkgs.org-contrib
-      epkgs.org-ref
-      epkgs.gnuplot
-      epkgs.pdf-tools
-    ];
+    enable = true;
+    extraPackages = epkgs: [
+        epkgs.org
+        epkgs.org-contrib
+        epkgs.org-ref
+        epkgs.gnuplot
+        epkgs.pdf-tools
+      ];
   };
 
   # Home utils
@@ -28,34 +28,25 @@
     vlc
     vesktop
     spotify
-    krita
+    # krita
 
     # Utils
-    feh
-    eog
-    gthumb
-    imv
+    # feh
+    # eog
+    # gthumb
+    # imv
     mpv
-    mpvpaper
-    nemo
-    file-roller
     kitty
     gnuplot
     texliveFull
     zathura
     mupdf
-    bemoji
-    fuzzel
-    rofi
-    waybar
     librewolf
     obsidian
     gnome-solanum
     fastfetch
     libreoffice-fresh
     openrgb-with-all-plugins
-    zip
-    unzip
 
     # Gaming
     steam

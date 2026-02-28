@@ -25,9 +25,9 @@
   
   xdg.portal = {
     enable = true;
-    wlr.enable = true;
-    # extraPortals = [ pkgs.kdePackages.xdg-desktop-portal-kde ];
-    # config.common.default = "kde";
+    # wlr.enable = true;
+    extraPortals = [ pkgs.kdePackages.xdg-desktop-portal-kde ];
+    config.common.default = "kde";
   };
   
   services = {
@@ -38,7 +38,6 @@
     gvfs.enable = true;
     dbus.enable = true;
     udisks2.enable = true;
-    pulseaudio.enable = false;
     pipewire = {
       enable = true;
       alsa.enable = true;

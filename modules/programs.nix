@@ -22,6 +22,7 @@
       obs-vkcapture
     ];
   };
+
   programs = {
     xwayland.enable = true;
     appimage.enable = true;
@@ -52,42 +53,23 @@
   # Environment/system packages
   environment.systemPackages = with pkgs; [
     ntfs3g
-    networkmanagerapplet
-    blueman
-    wlroots
-    wl-clipboard
-    wtype
-    cliphist
-    xwayland-satellite
-    libjpeg
-    libtiff
-    libnotify
-    mako
-    grim
-    slurp
     brightnessctl
-    hyprlock
-    hypridle
-    xdg-desktop-portal
-    xdg-desktop-portal-wlr
-    xdg-desktop-portal-gtk
-    xdg-desktop-portal-hyprland
     ffmpegthumbnailer
     jellyfin-ffmpeg
-    wlogout
-    wineWowPackages.unstable
+    wineWow64Packages.unstable
     winetricks
     dxvk
     freetype
-
-    # System utils
     dconf
     btop
     nvtopPackages.full
-    asusctl
-    supergfxctl
     pciutils
     mesa-demos
     vulkan-tools
+    libjpeg
+    libtiff
+    libnotify
+    asusctl
+    supergfxctl
   ];
 }

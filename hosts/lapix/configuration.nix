@@ -11,10 +11,10 @@
 
     # Define a user account. Don't forget to set a password with ‘passwd’.
     users.users.rashocean = {
-    isNormalUser = true;
-    description = "Muhammad Rashid K";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
+        isNormalUser = true;
+        description = "Muhammad Rashid K";
+        extraGroups = [ "networkmanager" "wheel" ];
+        packages = with pkgs; [];
     };
 
     # Define your hostname. 
@@ -32,6 +32,6 @@
     # Enable flakes
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-    system.stateVersion = "25.05";
+    system.stateVersion = "25.11";
 
 }

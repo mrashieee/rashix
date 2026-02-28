@@ -21,11 +21,17 @@
 
   hardware.enableRedistributableFirmware = true;
 
-  services.xserver.videoDrivers =
-    [ "nvidia" ];
+  services.xserver.videoDrivers = [ 
+    "nvidia" 
+  ];
 
   hardware.nvidia = {
     open = false;
+    powerManagement = {
+      enable = true;
+      finegrained = true;
+    };
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
     nvidiaSettings = true;
     modesetting.enable = true;
     prime = {
@@ -36,5 +42,10 @@
     intelBusId = "PCI:0:2:0";
     nvidiaBusId = "PCI:1:0:0";
     };
+  };
+
+  environment.sessionVariables = {
+    GBM_BACKEND = "nvidia-drm";
+    __GLX_VENDOR_LIBRARY_NAME = "nvidia";
   };
 }
