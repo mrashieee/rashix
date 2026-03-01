@@ -28,13 +28,9 @@
     vlc
     vesktop
     spotify
-    # krita
+    krita
 
     # Utils
-    # feh
-    # eog
-    # gthumb
-    # imv
     mpv
     kitty
     gnuplot
