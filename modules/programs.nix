@@ -1,13 +1,10 @@
 { config, pkgs, ... }:
 
 {
-
   # Obs Studio
   programs.obs-studio = {
     enable = true;
     enableVirtualCamera = true;
-
-    # optional Nvidia hardware acceleration
     package = (
       pkgs.obs-studio.override {
         cudaSupport = true;
@@ -18,7 +15,7 @@
       obs-backgroundremoval
       obs-pipewire-audio-capture
       obs-vaapi #optional AMD hardware acceleration
-     obs-gstreamer
+      obs-gstreamer
       obs-vkcapture
     ];
   };
@@ -38,7 +35,6 @@
       "org.localsend.localsend_app"
       "com.hperrin.StreamOverlay"
       "org.kde.okular"
-      "org.gnome.Snapshot"
       "org.gnome.Calculator"
       "community.pathofbuilding.PathOfBuilding"
       "org.qbittorrent.qBittorrent"
