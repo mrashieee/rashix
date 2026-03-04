@@ -51,5 +51,8 @@
     mangohud
     rimsort
     mcpelauncher-ui-qt
+    cbonsai
+    cmatrix
+    pipes
   ];
 }
