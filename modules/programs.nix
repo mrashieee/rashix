@@ -67,5 +67,7 @@
     libnotify
     asusctl
     supergfxctl
+
+    kdePackages.kdeconnect-kde
   ];
 }
