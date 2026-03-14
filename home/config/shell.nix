@@ -12,7 +12,7 @@
 
       # Aliases with arguments
       rashixupdate () {
-        DIR = $1
+        DIR = $(DIR)
         HOST = $(hostname)
 
         nix flake update "$DIR"
