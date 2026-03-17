@@ -54,5 +54,6 @@
     cbonsai
     cmatrix
     pipes
+    mindustry
   ];
 }
