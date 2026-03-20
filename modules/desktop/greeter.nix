@@ -3,11 +3,16 @@
 {
   # Enable the greeter.
 
-  # For SDDM
-  services.displayManager.sddm = {
+  # For Plasma Login Manager
+  services.displayManager.plasma-login-manager = {
     enable = true;
-    wayland.enable = true;
   };
+
+  # For SDDM
+  # services.displayManager.sddm = {
+  #   enable = true;
+  #   wayland.enable = true;
+  # };
 
   # services.xserver.displayManager.gdm.enable = true;
   # services.greetd = {
