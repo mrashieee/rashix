@@ -8,9 +8,9 @@
     };
     initExtra = ''
       # Run fastfetch
-      if [[ -z "$FASTFETCH_SHOWN" && -z "$IN_NIX_SHELL" ]]; then
+      if [[ -z "$FASTFETCH_SHOWN" && "$SHLVL" -eq 1 && "$TERM_PROGRAM" != "vscode" ]]; then
         ${pkgs.fastfetch}/bin/fastfetch
-        export FASTFETCH_SHOWN=1
+         export FASTFETCH_SHOWN=1
       fi
       
       # Set Prompt
