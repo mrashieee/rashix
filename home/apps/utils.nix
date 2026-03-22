@@ -55,5 +55,12 @@
     cmatrix
     pipes
     mindustry
+
+    # AI
+    curl
+    sqlite
+    ollama
+    open-webui
+    podman-compose
   ];
 }

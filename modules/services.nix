@@ -1,5 +1,7 @@
 { config, pkgs, ... }:
-
+let
+  user = "rashocean";
+in
 {
   # Networking & Bluetooth
   networking = {
@@ -9,13 +11,21 @@
         powersave = false;
       };
     };
+    firewall = {
+      enable = true;
+      allowedTCPPorts = [ 3000 11434 ];
+    };
     nameservers = [
-        "8.8.8.8"
-        "1.0.0.1"
         "1.1.1.1"
       ];
   };
   hardware.bluetooth.enable = true;
+
+  # Podman Virtualisation
+  virtualisation.podman = {
+    enable = true;
+    dockerCompat = true;
+  };
 
   # System services
   security= {
@@ -31,6 +41,27 @@
   };
   
   services = {
+    open-webui = {
+      enable = true;
+      port = 3000;
+      environment = {
+        OLLAMA_BASE_URL = "http://127.0.0.1:11434";
+        WEBUI_AUTH = "true";
+        ENABLE_SIGNUP = "true";
+
+        WEBUI_SEARCH_ENABLED = "true";
+      };
+    };
+
+    ollama = {
+      enable = true;
+      package = pkgs.ollama-cuda;
+      openFirewall = true;
+      environmentVariables = {
+        OLLAMA_NUM_PARALLEL = "2";
+        OLLAMA_MAX_LOADED_MODELS = "1";
+      };
+    };
     hardware.openrgb.enable = true;
     asusd.enable = true;
     supergfxd.enable = true;
