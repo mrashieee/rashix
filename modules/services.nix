@@ -1,7 +1,5 @@
 { config, pkgs, ... }:
-let
-  user = "rashocean";
-in
+
 {
   # Networking & Bluetooth
   networking = {
