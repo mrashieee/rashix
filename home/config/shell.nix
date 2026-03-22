@@ -30,10 +30,14 @@
         done
 
         echo "=== Loaded Models ==="
-        if ollama ps | tail -n +2 | grep -q .; then
-          ollama ps
+        if ollama ps >/dev/null 2>&1; then
+          if ollama ps | tail -n +2 | grep -q .; then
+            ollama ps
+          else
+            echo "  No models running"
+          fi
         else
-          echo "  No models running"
+          echo "  Couldn't get models, Ollama might be offline"
         fi
       '';
     };
