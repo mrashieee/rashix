@@ -24,6 +24,7 @@
     kicad
 
     # Entertainment
+    hakuneko
     blanket
     vlc
     vesktop
