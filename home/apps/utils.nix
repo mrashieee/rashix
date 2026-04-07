@@ -48,6 +48,7 @@
     # Gaming
     steam
     steam-run
+    protonup-qt
     lutris
     mangohud
     rimsort
@@ -61,7 +62,7 @@
     curl
     sqlite
     ollama
-    open-webui
+    # open-webui
     podman-compose
   ];
 }
