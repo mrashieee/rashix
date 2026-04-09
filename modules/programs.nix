@@ -67,6 +67,10 @@
     libnotify
     asusctl
     supergfxctl
+    zip
+    unzip
+    rar
+    unrar
 
     kdePackages.kdeconnect-kde
   ];
