@@ -43,7 +43,8 @@
       "io.github.OpenToonz"
       "org.polymc.PolyMC"
       "org.onlyoffice.desktopeditors"
-    ];      
+      "org.vinegarhq.Sober"
+    ];
   };
 
   # Environment/system packages
