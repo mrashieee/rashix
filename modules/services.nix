@@ -64,6 +64,7 @@
     hardware.openrgb.enable = true;
     asusd.enable = true;
     supergfxd.enable = true;
+    thermald.enable = true;
     printing.enable = true;
     gvfs.enable = true;
     dbus.enable = true;

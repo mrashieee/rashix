@@ -63,6 +63,7 @@
     sqlite
     ollama
     # open-webui
+    opencode
     podman-compose
   ];
 }
