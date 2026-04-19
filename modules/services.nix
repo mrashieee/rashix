@@ -39,18 +39,17 @@
   };
   
   services = {
-    # open-webui = {
-    #   enable = true;
-    #   port = 3000;
-    #   host = "0.0.0.0";
-    #   environment = {
-    #     OLLAMA_BASE_URL = "http://127.0.0.1:11434";
-    #     WEBUI_AUTH = "true";
-    #     ENABLE_SIGNUP = "true";
-
-    #     WEBUI_SEARCH_ENABLED = "true";
-    #   };
-    # };
+    open-webui = {
+      enable = true;
+      port = 3000;
+      host = "0.0.0.0";
+      environment = {
+        OLLAMA_BASE_URL = "http://127.0.0.1:11434";
+        WEBUI_AUTH = "true";
+        ENABLE_SIGNUP = "true";
+        WEBUI_SEARCH_ENABLED = "true";
+      };
+    };
 
     ollama = {
       enable = true;
@@ -61,6 +60,7 @@
         OLLAMA_MAX_LOADED_MODELS = "1";
       };
     };
+
     hardware.openrgb.enable = true;
     asusd.enable = true;
     supergfxd.enable = true;

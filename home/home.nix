@@ -6,6 +6,7 @@
       ./apps/utils.nix
       ./config/git.nix
       ./config/shell.nix
+      ./ai.nix
     ];
 
   home = {

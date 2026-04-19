@@ -58,12 +58,8 @@
     pipes
     mindustry
 
-    # AI
     curl
     sqlite
-    ollama
-    # open-webui
-    opencode
     podman-compose
   ];
 }

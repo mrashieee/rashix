@@ -7,6 +7,8 @@
       btw = "echo I use nixos, btw";
       ai-mode = "sudo systemctl start ollama open-webui";
       game-mode = "sudo systemctl stop ollama open-webui";
+      webui-on = "sudo systemctl start open-webui";
+      webui-off = "sudo systemctl stop open-webui";
       ai-status = ''
         echo "=== AI Services ==="
         systemctl is-active --quiet ollama && echo "  Ollama: Running" || echo "  Ollama: Offline"
