@@ -21,6 +21,7 @@
   };
 
   programs = {
+    nix-ld.enable = true;
     xwayland.enable = true;
     appimage.enable = true;
     appimage.binfmt = true;
