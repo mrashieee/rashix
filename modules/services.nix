@@ -48,6 +48,7 @@
         WEBUI_AUTH = "true";
         ENABLE_SIGNUP = "true";
         WEBUI_SEARCH_ENABLED = "true";
+        WEBUI_LANGUAGE = "en";
       };
     };
 
